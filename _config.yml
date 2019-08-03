@@ -47,13 +47,6 @@ defaults:
 
 excerpt_separator: <!--more-->
 
-
-authors:
-  bfinster:
-    name: Bryan Finster
-    web: https://www.linkedin.com/in/bryan-finster/
-
-
 # -------
 # Jekyll
 # -------
