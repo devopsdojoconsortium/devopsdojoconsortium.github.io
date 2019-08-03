@@ -6,9 +6,9 @@
   "content": "Latest Posts        Demo    Example blog post introThe rest of the blog post after the first para    "
  },
  {
-  "title": "Concord Documentation",
+  "title": "Playbooks",
   "url": "/docs/index.html",
-  "content": "Concord DocumentationWelcome to the Concord documentation!  Learn about Concord.  Get started using Concord.  Install Concord  Create your first project with the quickstart guide.  Write flows and more with the Concord DSL.  Find out about plugins.  Reference the API.Enjoy,Concord Team"
+  "content": "Playbooks"
  },
  {
   "title": "About the Consortium",
@@ -21,20 +21,20 @@
   "content": "ReferencesUseful Reference Material"
  },
  {
-  "title": "Concord",
+  "title": "Home",
   "url": "/index.html",
-  "content": "                                        Welcome to the DevOps Dojo Consortium                    "
+  "content": "                              Welcome to the DevOps Dojo Consortium                    "
  },
  {
-  "title": "Overview",
+  "title": "Playbooks",
   "url": "/docs/playbooks/index.html",
-  "content": "Concord ConsoleThe console is a web application for managing and monitoring the server. Itprovides features for users to login and work with projects, secrets, processesand other entities.The initial login screen simply prompts you for username and password.Typically, you log in with the credentials from your configured SSO/LDAP setup:After successfully signing in, you are presented with an initial overview:The top navigation bar includes a number of following elements.  Activity: the initial overview page with recent Concord activity at a glance  Processes: accces the list of processes  Organizations: access the list of organizations  System: access links to documentation, version information and more about Concord  Username: access your profile or log outThe main view displays aspects such as information about your processes,currently running projects and processes."
+  "content": "Playbookss"
  },
 
  {
   "title": "Training",
   "url": "/training.html",
-  "content": "# {{ page.title }}Concord training material is available on the site here for anyone to use and teach Concord usage.Speaker notes are part of the slides and can be viewed by pressing `S`. Moreinformation about the slides can be found in the[reveal.js documentation](https://github.com/hakimel/reveal.js).## Concord OverviewLearn about the features, benefits and use cases of Concord from our[overview presentation](./training/concord-overview.html).## Concord User Training: Level 1 - BeginnerThis training is aimed at anyone new to Concord. The following topics arecovered:- Workflow orchestration overview- Introduction of Concord- Flow overview- User interface- Forms- Tasks including JIRA, slack, ...- Ansible and OneOps&gt; Check out the [slides](./training/concord-1-beginner.html)"
+  "content": "# {{ page.title }}&gt; Check out the [slides](./training/dojo-overview.html)"
  },
 
 {
