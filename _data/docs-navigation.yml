@@ -1,0 +1,15 @@
+nav:
+  - title: References
+    id: references
+    collapse: /docs/references
+    subfolderitems:
+      - page: Overview
+        context: /docs/references/index
+  - title: Playbooks
+    id: playbooks
+    collapse: /docs/playbooks
+    subfolderitems:
+      - page: Overview
+        context: /docs/playbooks/index
+    
+  
