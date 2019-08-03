@@ -6,11 +6,11 @@
 
 id: dojoconsortium
 name: DevOps Dojo Consortium
-domain:  
-url: 
+domain: devopsdojoconsortium.github.io
+url: https://devopsdojoconsortium.github.io/index.html
 logo: /assets/img/logos/dojo-consortium-horiz.png
 description: "Opensourcing Enterprise Transformation."
-source_url: 
+source_url: https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io
 crossSite: false
 collapseNavDocs: true
 display-search-in-header: true
