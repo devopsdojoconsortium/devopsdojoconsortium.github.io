@@ -61,7 +61,6 @@ exclude:
   - pom.xml
   - "*.sh"
   - wmt-release*
-  - README.md
   - sonar*
   - vendor
   - travis.yml
