@@ -6,16 +6,28 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.3
+  
 bundler_args: --without development
+
 before_install:
   - gem update --system
   - gem install bundler
   # - gem install html-proofer
+
 branches:
   only:
   - dev
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+cache: bundler # caching bundler gem packages will speed up build
+
 script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
+
 deploy:
   provider: pages
   local-dir: ./_site
