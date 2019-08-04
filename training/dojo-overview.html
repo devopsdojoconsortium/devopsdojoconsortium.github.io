@@ -4,17 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <title>Presentation Example</title>
-  <link href="../assets/reveal/css/reveal.css?{{site.time | date: '%s%N'}}"
-    rel="stylesheet" />
-  <link href="../assets/reveal/lib/css/zenburn.css?{{site.time | date: '%s%N'}}"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="../assets/plugins/font-awesome/css/font-awesome.css?{{site.time | date: '%s%N'}}" />
-  <link href="../assets/reveal/css/theme/dojo.css?{{site.time | date: '%s%N'}}"
-    rel="stylesheet" />
+  <link href="../assets/reveal/css/reveal.css?{{site.time | date: '%s%N'}}" rel="stylesheet" />
+  <link href="../assets/reveal/lib/css/zenburn.css?{{site.time | date: '%s%N'}}" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.css?{{site.time | date: '%s%N'}}" />
+  <link href="../assets/reveal/css/theme/dojo.css?{{site.time | date: '%s%N'}}" rel="stylesheet" />
 
-  <link href="../assets/reveal/css/theme/dojo-center.css?{{site.time | date: '%s%N'}}"
-    rel="stylesheet" />
+  <link href="../assets/reveal/css/theme/dojo-center.css?{{site.time | date: '%s%N'}}" rel="stylesheet" />
   <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -30,111 +25,106 @@
   <div class="reveal">
     <div class="slides">
       <section>
-        <img src="../assets/img/logos/dojo-consortium-logo.png" />
+        <img src="../assets/img/logos/dojo-consortium-logo.png" alt="Consortium logo"/>
         <h1>Overview</h1>
       </section>
-      <section data-background="../assets/img/logos/dojo-consortium-logo.png"
-        data-background-size="250px"
-        data-background-position="top 10px right 10px"
-        data-markdown="./includes/presentation-1.md"
-        data-separator="^<!--- horizontal -->"
-        data-separator-vertical="^<!--- vertical -->"
-        data-separator-notes="^Note:"
-        data-charset="iso-8859-15"></section>
+      <section data-background="../assets/img/logos/dojo-consortium-logo.png" data-background-size="250px"
+        data-background-position="top 10px right 10px" data-markdown="./includes/presentation-1.md"
+        data-separator="^<!--- horizontal -->" data-separator-vertical="^<!--- vertical -->"
+        data-separator-notes="^Note:" data-charset="iso-8859-15"></section>
       <!-- This is the final slide with a solid background and white bolt -->
-      <section data-background="../assets/img/slides/dark-blue-bg.png"
-        data-background-repeat="repeat"
-        data-background-size="2px"
-        class="slide-final">
-        <img src="../assets/img/slides/bolt-wht.png"
-          class="img-responsive" />
+      <section data-background="../assets/img/slides/dark-blue-bg.png" data-background-repeat="repeat"
+        data-background-size="2px" class="slide-final">
+        <img src="../assets/img/logos/dojo-consortium-logo.png"
+          class="img-responsive"
+          alt="Consortium logo"/>
       </section>
     </div>
 
-    <div id="hidden"
-      style="display:none;">
+    <div id="hidden" style="display:none;">
       <div id="header">
         <div id="footer">
           <img id="footer-logo"
             align="right"
-            src="../assets/img/logos/dojo-consortium-horiz.png" />
+            src="../assets/img/logos/dojo-consortium-horiz.png"
+            alt="Consortium logo"/>
         </div>
-      </div>
-    </div><!-- END FOOTER -->
-  </div><!-- END REVEAL -->
-  <script src="../assets/reveal/lib/js/head.min.js"></script>
-  <script src="../assets/reveal/js/reveal.js"></script>
-  <script>
-    // See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      slideNumber: true,
-      width: '100%',
-      height: '100%',
-      // 720p as used for videos
-      //width : 1280,
-      //height : 720,
-      margin: 0.1,
-      minScale: 0.2,
-      maxScale: 1.5,
+        </div>
+      </div><!-- END FOOTER -->
+    </div><!-- END REVEAL -->
+    <script src="../assets/reveal/lib/js/head.min.js"></script>
+    <script src="../assets/reveal/js/reveal.js"></script>
+    <script>
+      // See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+        width: '100%',
+        height: '100%',
+        // 720p as used for videos
+        //width : 1280,
+        //height : 720,
+        margin: 0.1,
+        minScale: 0.2,
+        maxScale: 1.5,
 
-      // Optional libraries used to extend on reveal.js
-      dependencies: [{
-          src: '../assets/reveal/lib/js/classList.js',
-          condition: function() {
-            return !document.body.classList;
-          }
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: '../assets/reveal/lib/js/classList.js',
+            condition: function() {
+              return !document.body.classList;
+            }
                 },
-        {
-          src: '../assets/reveal/plugin/markdown/marked.js',
-          condition: function() {
-            return !!document.querySelector('[data-markdown]');
-          }
+          {
+            src: '../assets/reveal/plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
                 },
-        {
-          src: '../assets/reveal/plugin/markdown/markdown.js',
-          condition: function() {
-            return !!document.querySelector('[data-markdown]');
-          }
+          {
+            src: '../assets/reveal/plugin/markdown/markdown.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
                 },
-        {
-          src: '../assets/reveal/plugin/zoom-js/zoom.js',
-          async: true,
-          condition: function() {
-            return !!document.body.classList;
-          }
+          {
+            src: '../assets/reveal/plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
                 },
-        {
-          src: '../assets/reveal/plugin/notes/notes.js',
-          async: true,
-          condition: function() {
-            return !!document.body.classList;
-          }
+          {
+            src: '../assets/reveal/plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+              return !!document.body.classList;
+            }
                 }
             ]
-    });
-
-  </script>
-
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript">
-    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-    var header = $('#header')
-      .html();
-    if (window.location.search.match(/print-pdf/gi)) {
-      Reveal.addEventListener('ready', function(event) {
-        $('.slide-background')
-          .append(header);
       });
-    } else {
-      $('div.reveal')
-        .append(header);
-    }
 
-  </script>
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+      // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+      var header = $('#header')
+        .html();
+      if (window.location.search.match(/print-pdf/gi)) {
+        Reveal.addEventListener('ready', function(event) {
+          $('.slide-background')
+            .append(header);
+        });
+      } else {
+        $('div.reveal')
+          .append(header);
+      }
+
+    </script>
 </body>
 
 </html>

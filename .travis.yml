@@ -10,7 +10,7 @@ bundler_args: --without development
 before_install:
   - gem update --system
   - gem install bundler
-  - gem install html-proofer
+  # - gem install html-proofer
 branches:
   only:
   - dev
