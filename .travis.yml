@@ -4,7 +4,7 @@ language: ruby
 cache: bundler
 rvm:
 - 2.4.1
-bundler_args: "--without development"
+bundler_args: --without development
 before_install:
 # - openssl aes-256-cbc -K $encrypted_e3ad0fda7dfd_key -iv $encrypted_e3ad0fda7dfd_iv
 #   -in .travis/github_deploy_key.enc -out github_deploy_key -d
@@ -24,7 +24,7 @@ addons:
     packages:
     - libcurl4-openssl-dev
 script:
-- JEKYLL_ENV=production bundle exec jekyll build --destination site
+- JEKYLL_ENV=production bundle exec jekyll build --destination _site
 deploy:
   provider: pages
   local-dir: "./_site"
@@ -36,4 +36,3 @@ deploy:
   keep-history: true
   on:
     branch: dev
-
