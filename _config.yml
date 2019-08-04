@@ -57,13 +57,16 @@ kramdown:
   hard_wrap: false
 
 exclude:
-  - ".*"
-  - "Gemf*"
-  - "pom.xml"
+  - .*
+  - pom.xml
   - "*.sh"
-  - "wmt-release*"
-  - "README.md"
-  - "*.sh"
-  - "sonar*"
-  - "vendor"
-  - "travis.yml"
+  - wmt-release*
+  - README.md
+  - sonar*
+  - vendor
+  - travis.yml
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Rakefile
