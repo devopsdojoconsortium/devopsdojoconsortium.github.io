@@ -1,41 +1,32 @@
-# References:
-# - https://docs.travis-ci.com/user/caching/#Bundler
 sudo: false
 dist: trusty
 language: ruby
 cache: bundler
 rvm:
-  - 2.4.1
-
-bundler_args: --without development
-
+- 2.4.1
+bundler_args: "--without development"
 before_install:
-  - gem update --system
-  - gem install bundler
-  # - gem install html-proofer
-
+- openssl aes-256-cbc -K $encrypted_e3ad0fda7dfd_key -iv $encrypted_e3ad0fda7dfd_iv
+  -in github_deploy_key.enc -out github_deploy_key -d
+- gem update --system
+- gem install bundler
 branches:
   only:
   - dev
-
 addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-
-cache: bundler # caching bundler gem packages will speed up build
-
 script:
-  - JEKYLL_ENV=production bundle exec jekyll build --destination site
-
+- JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
   provider: pages
-  local-dir: ./_site
+  local-dir: "./_site"
   target-branch: master
   email: deploy@travis-ci.org
   name: Deployment Bot
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: dev

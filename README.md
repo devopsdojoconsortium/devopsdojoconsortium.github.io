@@ -2,6 +2,10 @@
 
 This is the source code of the website for devopsdojocommons.org
 
+<img src="https://travis-ci.org/devopsdojoconsortium/devopsdojoconsortium.github.io.svg?branch=master">
+
+---
+
 ## Build
 
 ```
