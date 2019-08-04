@@ -11,6 +11,10 @@ Contributions are welcome. Please follow the following guidelines:
 * Follow the [GitHub Guidelines](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) on creating a pull request.
 * Please descriptive in your PR.
 
+## Branch structure
+
+This site is deployed using GitHub Pages, which is served from `master`. Because of this, `release` is the trunk. Builds are pushed to Master.
+
 ## Page edits
 
 * Ensure that [img tags have alt attributes populated](http://webaim.org/techniques/alttext/) (for accessibility)
