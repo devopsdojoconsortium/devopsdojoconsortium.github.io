@@ -18,7 +18,7 @@ before_install:
 #                         --path-encrypted-key ".travis/github_deploy_key.enc"
 branches:
   only:
-  - dev
+  - release
 addons:
   apt:
     packages:
@@ -35,4 +35,4 @@ deploy:
   skip-cleanup: true
   keep-history: true
   on:
-    branch: dev
+    branch: release
