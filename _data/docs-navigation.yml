@@ -11,5 +11,17 @@ nav:
     subfolderitems:
       - page: Overview
         context: /docs/playbooks/index
+      - page: Agile
+        context: /docs/playbooks/agile/index
+      - page: Culture
+        context: /docs/playbooks/culture/index
+      - page: DevOps
+        context: /docs/playbooks/devops/index
+      - page: First Aid
+        context: /docs/playbooks/first-aid/index
+      - page: Metrics
+        context: /docs/playbooks/metrics/index
+      - page: Product
+        context: /docs/playbooks/product/index
     
   

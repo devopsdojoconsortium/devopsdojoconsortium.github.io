@@ -1,4 +1,10 @@
-# DevOps
+---
+layout: docs
+title:  DevOps
+side-navigation: docs-navigation.html
+---
+
+# {{ page.title }}
 
 - 3 Ways
 - Value Stream Mapping

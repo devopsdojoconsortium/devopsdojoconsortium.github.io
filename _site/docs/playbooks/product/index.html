@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | About the Consortium</title>
+  <title>DevOps Dojo Consortium | Product</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Opensourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1564879107062193000" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1564879107062193000" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1564879107062193000" />
-  <link rel="stylesheet" href="/assets/css/site.css?1564879107062193000" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1564879306291114000" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1564879306291114000" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1564879306291114000" />
+  <link rel="stylesheet" href="/assets/css/site.css?1564879306291114000" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1564879107062193000" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1564879306291114000" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1564879107062193000" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1564879306291114000" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -70,10 +70,7 @@
           
           
           
-          <!--this will break if context isn't in the first part of the url-->
-          
-          
-          <li class="active">
+          <li class="">
             
             <a href="/overview/index.html">OVERVIEW</a>
             
@@ -82,7 +79,10 @@
           
           
           
-          <li class="">
+          <!--this will break if context isn't in the first part of the url-->
+          
+          
+          <li class="active">
             
             <a href="/docs/index.html">DOCS</a>
             
@@ -131,28 +131,107 @@
   <div class="margin-bottom-20"></div>
   <div class="container">
     <div class="row margin-bottom-50">
+
+    <!----- Docs Navigation ----->
   <div class="col-md-3">
-    <div class="margin-bottom-5">&nbsp;</div>
-    <div class="project-btn-container">
-      <div class="btn-group-vertical projects-menu" role="group" aria-label="...">
+
+    <div class="docs-navigation">
+      
+      
+      <h2><a onclick="toggleMenu(this, '#references');"><i class="fa fa-chevron-right pale-blue"></i> References</a></h2>
+      <ul id="references" class="hidden">
+      
         
+        <li >
+          <a href="/docs/references/index.html">Overview</a></li>
         
+      </ul>
+      
+      
+      <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
+      <ul id="playbooks" >
+      
         
-        <a href="/overview/index.html" role="button" class="btn btn-projects active">About the Consortium</a>
+        <li >
+          <a href="/docs/playbooks/index.html">Overview</a></li>
         
-      </div>
+        <li >
+          <a href="/docs/playbooks/agile/index.html">Agile</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/culture/index.html">Culture</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/devops/index.html">DevOps</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/first-aid/index.html">First Aid</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
+        
+        <li class="active">
+          <a href="/docs/playbooks/product/index.html">Product</a></li>
+        
+      </ul>
+      
     </div>
-  </div>
-
-  <div id="project-content">
-    <div class="col-md-9">
-      <h1>About the Consortium</h1>
-      <p>The DevOps Dojo Consortium is …</p>
+  </div><!-- END col-md-3 docs-navigation -->
 
 
-    </div>
-  </div>
+  <!----- Looper Docs Content ----->
+  <div class="col-md-9 docs-content">
+    
+    <div style="float:right;font-size:11px;">
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/master/docs/playbooks/product/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
+
+    
+    
+<div style="font-size: 12px;">
+  <p><a href="/">Home</a> >
+  
+    
+      <a href="/docs/"
+        style="text-transform: capitalize"
+      >docs</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/product/"
+        style="text-transform: capitalize"
+      >product</a> > 
+    
+  
+    
+      <span style="font-weight: bold;">Product</span>
+    
+  </p>
+</div>
+
+    <h1 id="product">Product</h1>
+
+<ul>
+  <li>Developing a product strategy</li>
+  <li>Defining business outcomes</li>
+</ul>
+
+    <script>
+var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+for (var i = 0; i < headings.length; i++)
+{ headings[i].innerHTML = '<a href="#' + headings[i].id + '">' + headings[i].innerHTML + '</a>'; }
+</script>
+
+  </div><!-- END col-md-9 docs-content -->
+
+</div><!-- END row -->
+
   </div><!-- END container -->
 </div><!-- END wrap -->
 
