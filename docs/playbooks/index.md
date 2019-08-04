@@ -6,4 +6,4 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-s
+

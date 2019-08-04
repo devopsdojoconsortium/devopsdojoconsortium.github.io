@@ -22,33 +22,19 @@ Contributions are welcome. Please follow the following guidelines:
 
 * Do this once when you've checked out your fork of the main ISC repo: git remote add upstream https://github.com/InnerSourceCommons/innersourcecommons.org.git
 * Do this to rebase the fork with the main ISC repo: 
-    - git fetch upstream
-    - git checkout master
-    - git rebase upstream/master
+  * git fetch upstream
+  * git checkout master
+  * git rebase upstream/master
 * Make your changes and test/check them
-* Push them to your fork
-    - git add &lt;files&gt;
-    - git commit -m "comment" &lt;files&gt;
-    - git push origin master
+ Push them to your fork
+  * git add &lt;files&gt;
+  * git commit -m "comment" &lt;files&gt;
+  * git push origin master
 * At this point, I usually go to the github web page for my fork to create the PR
 
-## Build process:
-
-Travis CI has been configured - so your change will be built and tested when you create a PR
-
 ### General flow
+
 * Install ruby
-* Install bundler gem
+* Run `gem install bundler`
 * Run `bundle install`
-* Run `jekyll build -s &lt;master branch location&gt; -d &lt;gh-pages location&gt;`
-
-### Steps required on Ubuntu 1804
-
-* `sudo apt install ruby ruby-bundler ruby-dev libxml2-dev libxslt-dev`
-* `bundle install --path vendor/build`
-* `bundle exec jekyll build -d ./_site`
-
-## Merge guidelines:
-
-* When merging a PR, ensure that you create a merge commit - this will ensure that travis kicks off and publishes the change.
-
+* Run `./native-launch.sh`

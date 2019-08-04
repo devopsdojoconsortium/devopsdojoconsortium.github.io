@@ -2,7 +2,6 @@
 
 This is the source code of the website for devopsdojocommons.org
 
-
 ## Build
 
 ```
@@ -13,7 +12,9 @@ bundle install
 
 ## Contribute
 
-Feel free to submit pull requests
+Feel free to [submit pull requests](./CONTRIBUTING.MD)
+
+## [Code of conduct](CODE_OF_CONDUCT.md)
 
 ## Adding authors
 

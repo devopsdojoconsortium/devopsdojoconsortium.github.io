@@ -10,7 +10,7 @@ domain: devopsdojoconsortium.github.io
 url: https://devopsdojoconsortium.github.io/index.html
 logo: /assets/img/logos/dojo-consortium-horiz.png
 description: "Opensourcing Enterprise Transformation."
-source_url: https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io
+source_url: https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/master/
 crossSite: false
 collapseNavDocs: true
 display-search-in-header: true
