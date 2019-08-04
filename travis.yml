@@ -1,0 +1,28 @@
+# References:
+# - https://docs.travis-ci.com/user/caching/#Bundler
+sudo: false
+dist: trusty
+language: ruby
+cache: bundler
+rvm:
+  - 2.6.3
+bundler_args: --without development
+before_install:
+  - gem update --system
+  - gem install bundler
+branches:
+  only:
+  - release
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build --destination site
+deploy:
+  provider: pages
+  local-dir: ./_site
+  target-branch: master
+  email: deploy@travis-ci.org
+  name: Deployment Bot
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: dev

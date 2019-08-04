@@ -63,6 +63,7 @@ exclude:
   - "*.sh"
   - "wmt-release*"
   - "README.md"
-  - "publish.sh"
+  - "*.sh"
   - "sonar*"
   - "vendor"
+  - "travis.yml"
