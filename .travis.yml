@@ -11,11 +11,11 @@ before_install:
 - gem update --system
 - gem install bundler
 after_success:
-  - |
+- |
 
-       $(npm bin)/set-up-ssh --key "$encrypted_XXXXXXXXXXXX_key" \
-                             --iv "$encrypted_XXXXXXXXXXXX_iv" \
-                             --path-encrypted-key ".travis/github_deploy_key.enc"
+  $(npm bin)/set-up-ssh --key "$encrypted_XXXXXXXXXXXX_key" \
+                        --iv "$encrypted_XXXXXXXXXXXX_iv" \
+                        --path-encrypted-key ".travis/github_deploy_key.enc"
 branches:
   only:
   - dev
@@ -32,7 +32,9 @@ deploy:
   email: deploy@travis-ci.org
   name: Deployment Bot
   skip-cleanup: true
-  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: dev
+env:
+  global:
+    secure: XcvGS8dsGghbCLHUnkV2ifxSO320RowkfPae/npKEqR5mUFLgJcovplL5pBhItVvlzO8lMxobDT+YY+U2CDPQw8y+XYJNorz+WcsFHKORAv1zBOCwV11EkNu5t6Ie5zX3K21ZhhM0XAv4uypilUSBQwJ0mRd5JnLY8T+NA1rSVAnAqhIdUYDTIZsw7W0wy+2YCthSX56tO7rAQEeZbGc07fVyBg0/pGyXaE+6r8SJJ/9LZMOIEKDh9/yoy2lJLR0H1CRiih2P6ZPjdU80Yx2cYwPVSapU157nyI+hQE7gnNBC9ZCOQVFZ6mbojiluVo1vhKYmFpG2IeWHAC+gxAZB6y1CYAsvhmncIGIRC4wnbep16yGTVh43Hl4degDt7oW+TAyhjPfvRLFm5GRF0PSkP3tuV5K3Gj4WRm2hET0oD96lOSd3J27x0bVlDscs+RQnjz5A50U3cOYrcxSXqMP/ws0vdaimYl3RuHGQCbmTGR8uAj4oCSivmOc7JsTllNrfa7tk//RQOuGdFZFIDkigjYgE2xMfOc1i9LjlBvBJq0UhcT0B5OSvVIy9g1gFlnsMnDhx2x5BUn+dZT8ClIe6x5THrYLWdhcptFx3tmxxSEYo3CtihMUn0eC0dNWLaBkiR8uqDfJdzwzHaGQoZH+hZmyCEDngnneKLXPbp9bjiA=
