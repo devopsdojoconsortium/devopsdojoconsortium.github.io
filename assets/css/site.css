@@ -703,7 +703,7 @@ ul.top-nav li a {
 /* ------------------------------ HOMEPAGE STYLES ------------------------------ */
 
 .homeBanner {
-  background: var(--purple);
+  background: var(--dark-blue);
   margin-top: -20px;
   margin-bottom: 50px;
   padding: 0px;
@@ -831,7 +831,7 @@ ul.pagination li a:hover {
 }
 
 .purple {
-  color: var(--purple);
+  color: var(--dark-blue);
 }
 
 .dark-blue {
@@ -862,7 +862,7 @@ ul.pagination li a:hover {
 }
 
 .dark-blue-bg {
-  background-color: var(--purple) !important;
+  background-color: var(--dark-blue) !important;
   color: #ffffff;
 }
 
@@ -1267,8 +1267,8 @@ a.list-group-item-success.active:focus {
   opacity: 0.6;
   margin-top: 40px;
   padding: 20px 0 30px;
-  background: var(--purple);
-  border-top: 1px solid var(--purple);
+  background: var(--dark-blue);
+  border-top: 1px solid var(--dark-blue);
 }
 
 .footer h2 {
@@ -1326,8 +1326,8 @@ a.list-group-item-success.active:focus {
 }
 
 .copyright {
-  background: none repeat scroll 0 0 var(--purple);
-  border-top: 1px solid var(--purple);
+  background: none repeat scroll 0 0 var(--dark-blue);
+  border-top: 1px solid var(--dark-blue);
   font-size: 12px;
   padding: 11px 0 7px;
 }
@@ -1377,7 +1377,7 @@ body {
 }
 
 .stickyFooter {
-  background-color: var(--purple);
+  background-color: var(--dark-blue);
 }
 
 /* ------------------------------ TABLE STYLES ------------------------------ */
