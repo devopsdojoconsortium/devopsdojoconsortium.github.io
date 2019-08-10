@@ -1,0 +1,87 @@
+---
+layout: docs
+title: Team Value Stream Mapping (VSM) Workshop
+side-navigation: cd-navigation.html
+---
+
+# {{ page.title }}
+
+The purpose of Value Stream Mapping Workshop is to understand all of the steps needed to
+deliver value from conception to production. We can then use it as a tool to
+identify constraints and propose improvements to the value stream.
+
+## Recommended Practices
+
+1. Everyone who has a touch point in the value stream should be present for the
+   exercise. This includes, but is not limited to, the developers, the
+   engineering manager, the product owner, and representatives from any external
+   teams that have required steps between idea and production.
+2. Start with an introduction to what value stream mapping is, and why it is important.
+
+<a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%"></a>
+
+### Explain the terms associated with value stream mapping
+
+1. [Build Cycle Time](../metrics/build-cycle-time.html)
+2. [Development Cycle Time](../metrics/development-cycle-time.html)
+3. [Lead Time](../metrics/total-lead-time.html): The time taken from start to end of the value stream.
+4. Process Time / Value Add Time: The time spent executing a particular process.
+5. Wait Time / Non-value Time: The time between processes where no activity is occurring.
+6. Percent Complete and Accurate: The percentage of work from a process that is
+   rejected by the next process. If coding fails code review 20% of the time,
+   it's %C/A is 80%.
+
+<img src="../images/VSM-Card-Example.png" width="50%">
+
+### Identify source of request
+
+<img src="../images/request-example.png" width="30%">
+
+*Example:* Refine Epic
+
+For each source of _Requests_
+  1. What is the outcome of that step, or next step?
+  2. Who is involved in that step?
+  3. How long does this step take?
+  4. How long between the previous and current steps?
+
+### Identify Rework Loops for each step
+
+<img src="../images/rework-example.png" width="30%">
+
+1. To which steps do we return to from this one for corrections?
+2. How often is work rejected from this step (percentage complete and accurate)?
+
+### Identify value added time, cycle time, and lead time
+
+<a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%"></a>
+
+1. What is the total value time (time spent doing work) from conception to production?
+2. What is the total non-value time (time waiting) from conception to production?
+
+## Outcomes
+
+- Visual representation of the value stream(s) of the team.
+- Identify possible constraints to flow based on value added time, cycle time, and lead time.
+
+## Tips
+
+- Involve all team members associated to any part of the process of getting value from conception to production.
+- Review and maintain value stream map to show wins associated to implementing improvement.
+- Take into account all potential flows for team processes, and value stream those as well.
+
+## Value
+
+As a team, we want to understand how to value stream map our team processes, so that we may understand bottlenecks associated to delivering value, and identify areas of improvement.
+
+## Acceptance Criteria
+
+- Value stream all things associated to delivering value.
+- Create action items of improvement from exercise.
+
+## References
+
+- [Value Stream Mapping Guide](https://creately.com/blog/diagrams/value-stream-mapping-guide/)
+- [Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation](https://learning.oreilly.com/library/view/value-stream-mapping/9780071828918/)
+
+{% include playbooks-footer.html %}

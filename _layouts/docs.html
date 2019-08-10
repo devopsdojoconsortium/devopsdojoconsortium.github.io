@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-<div class="row margin-bottom-50">
 
-  {% include {{page.side-navigation}} %}
+<div class="row margin-bottom-50">
+  {% include {{ page.side - navigation }} %}
 
   <!----- Looper Docs Content ----->
   <div class="col-md-9 docs-content">
-    {% if site.edit-on-github == false %}
-
-    {% else %}
-    {% include edit-on-github.html %}
-    {% endif %}
-    {% include breadcrumbs.html %}
-    {{content}}
-    {% include auto-header-links.html %}
-  </div><!-- END col-md-9 docs-content -->
-
-</div><!-- END row -->
+    {% if site.edit-on-github == false %} {% else %} {% include edit-on-github.html %} {% endif %} {% include breadcrumbs.html %}
+    {{ content }}
+    {% include auto-header-links.html %} {% include license.html %}
+  </div>
+  <!-- END col-md-9 docs-content -->
+</div>
+<!-- END row -->
