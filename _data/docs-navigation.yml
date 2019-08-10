@@ -23,5 +23,7 @@ nav:
         context: /docs/playbooks/metrics/index
       - page: Product
         context: /docs/playbooks/product/index
+      - page: Value Stream Orientation
+        context: /docs/playbooks/valuestream/index
     
   
