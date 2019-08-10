@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: Team Value Stream Mapping (VSM) Workshop
-side-navigation: cd-navigation.html
 ---
 
 # {{ page.title }}
@@ -40,6 +39,7 @@ identify constraints and propose improvements to the value stream.
 *Example:* Refine Epic
 
 For each source of _Requests_
+
   1. What is the outcome of that step, or next step?
   2. Who is involved in that step?
   3. How long does this step take?
@@ -84,4 +84,3 @@ As a team, we want to understand how to value stream map our team processes, so 
 - [Value Stream Mapping Guide](https://creately.com/blog/diagrams/value-stream-mapping-guide/)
 - [Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation](https://learning.oreilly.com/library/view/value-stream-mapping/9780071828918/)
 
-{% include playbooks-footer.html %}
