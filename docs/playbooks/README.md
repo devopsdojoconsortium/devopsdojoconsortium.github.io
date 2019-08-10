@@ -10,10 +10,10 @@
 
 ## [DevOps](./devops/README.md)
 
-## [First Aid Kit](./first-aid/README.md)
-
 ## [FAQs](faq.md)
   
 ## [Culture](./culture/README.md)
 
 ## [Metrics](./metrics/README.md)
+
+## [Value Stream Orientation](./valuestream/README.md)

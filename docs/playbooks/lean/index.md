@@ -1,15 +1,10 @@
 ---
 layout: docs
-title:  DevOps
+title:  Lean Process
 side-navigation: docs-navigation.html
 ---
 
 # {{ page.title }}
 
-- 3 Ways
 - Value Stream Mapping
-- Trunk Based Development
-- ATDD/BDD
-- TDD
-- CI/CD
-- Test Automation
+  - [Value Stream Orientation](./value-stream-orientation.html)
