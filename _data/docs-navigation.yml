@@ -17,8 +17,6 @@ nav:
         context: /docs/playbooks/culture/index
       - page: DevOps
         context: /docs/playbooks/devops/index
-      - page: First Aid
-        context: /docs/playbooks/first-aid/index
       - page: Metrics
         context: /docs/playbooks/metrics/index
       - page: Product
