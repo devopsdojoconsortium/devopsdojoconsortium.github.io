@@ -23,12 +23,12 @@ identify constraints and propose improvements to the value stream.
 
 ### Explain the terms associated with value stream mapping
 
-1. [Build Cycle Time](../metrics/build-cycle-time.html)
-2. [Development Cycle Time](../metrics/development-cycle-time.html)
-3. [Lead Time](../metrics/total-lead-time.html): The time taken from start to end of the value stream.
-4. Process Time / Value Add Time: The time spent executing a particular process.
-5. Wait Time / Non-value Time: The time between processes where no activity is occurring.
-6. Percent Complete and Accurate: The percentage of work from a process that is
+- Build Cycle Time: Total duration of the build, from commit to deploy.
+- Development Cycle Time: The time from when work begins until it is deployed to production. Done.
+- Lead Time: The time taken from start to end of the value stream.
+- Process Time / Value Add Time: The time spent executing a particular process.
+- Wait Time / Non-value Time: The time between processes where no activity is occurring.
+- Percent Complete and Accurate: The percentage of work from a process that is
    rejected by the next process. If coding fails code review 20% of the time,
    it's %C/A is 80%.
 
