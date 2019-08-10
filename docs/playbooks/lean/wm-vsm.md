@@ -1,6 +1,8 @@
 ---
 layout: docs
-title: Team Value Stream Mapping (VSM) Workshop
+title: Value Stream Mapping Workshop
+authors: [adixon, bfinster, nnicholson, pgibbs]
+side-navigation: docs-navigation.html
 ---
 
 # {{ page.title }}
