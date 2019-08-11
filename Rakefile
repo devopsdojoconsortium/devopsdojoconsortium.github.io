@@ -7,7 +7,7 @@ task :default do
   # for invalid HTML
   HTMLProofer.check_directory(
     "./_site",
-    url_ignore: [/linkedin.com|php-fig.org|bower.io|bost.ocks.org|elementary.io/,/localhost/],
+    url_ignore: [/linkedin.com|php-fig.org|bower.io|bost.ocks.org|elementary.io|github.com/],
     empty_alt_ignore: true,
     disable_external: false,
     file_ignore: [/\/assets\/reveal\//],
