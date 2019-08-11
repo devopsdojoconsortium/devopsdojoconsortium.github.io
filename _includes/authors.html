@@ -1,5 +1,7 @@
 <div style="float:right;font-size:.8em;">
-  Contributed by:
+  {% if page.authors.length > 0 %}
+    Contributed by:
+  {% endif %}
   {% for author in page.authors %}{% assign current = site.data.authors[author] %}<a
     href="{{ current.web }}">{{ current.name }}</a>
   {% unless forloop.last %},{% endunless%}
