@@ -1,0 +1,7 @@
+<div style="float:right;font-size:.8em;">
+  Contributed by:
+  {% for author in page.authors %}{% assign current = site.data.authors[author] %}<a
+    href="{{ current.web }}">{{ current.name }}</a>
+  {% unless forloop.last %},{% endunless%}
+  {% endfor %}
+</div><br>

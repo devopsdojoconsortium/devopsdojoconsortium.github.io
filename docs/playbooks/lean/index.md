@@ -8,3 +8,4 @@ side-navigation: docs-navigation.html
 
 - Value Stream Mapping
   - [Value Stream Orientation](./value-stream-orientation.html)
+  - [Value Stream Mapping Workshop](./wm-vsm.html)

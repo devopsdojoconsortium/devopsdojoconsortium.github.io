@@ -1,6 +1,7 @@
 ---
 layout: docs
 title:  Value Stream Orientation
+authors: [drewdeal]
 side-navigation: docs-navigation.html
 ---
 
