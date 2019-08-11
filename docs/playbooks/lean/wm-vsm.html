@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Automation</title>
+  <title>DevOps Dojo Consortium | Value Stream Mapping Workshop</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -158,7 +158,7 @@
         <li >
           <a href="/docs/playbooks/culture/index.html">Culture</a></li>
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/automation/index.html">Automation</a></li>
         
         <li >
@@ -180,7 +180,7 @@
   <div class="col-md-9 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/automation/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/lean/wm-vsm.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -201,25 +201,133 @@
     
   
     
-      <a href="/docs/playbooks/automation/"
+      <a href="/docs/playbooks/lean/"
         style="text-transform: capitalize"
-      >automation</a> > 
+      >lean</a> > 
     
   
     
-      <span style="font-weight: bold;">Automation</span>
+      <span style="font-weight: bold;">Value Stream Mapping Workshop</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   Contributed by:
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="automation">Automation</h1>
+    <h1 id="value-stream-mapping-workshop">Value Stream Mapping Workshop</h1>
 
-<p>This is WIP…</p>
+<p>The purpose of Value Stream Mapping Workshop is to understand all of the steps needed to
+deliver value from conception to production. We can then use it as a tool to
+identify constraints and propose improvements to the value stream.</p>
+
+<h2 id="recommended-practices">Recommended Practices</h2>
+
+<ol>
+  <li>Everyone who has a touch point in the value stream should be present for the
+exercise. This includes, but is not limited to, the developers, the
+engineering manager, the product owner, and representatives from any external
+teams that have required steps between idea and production.</li>
+  <li>Start with an introduction to what value stream mapping is, and why it is important.</li>
+</ol>
+
+<p><a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%" /></a></p>
+
+<h3 id="explain-the-terms-associated-with-value-stream-mapping">Explain the terms associated with value stream mapping</h3>
+
+<ul>
+  <li>Build Cycle Time: Total duration of the build, from commit to deploy.</li>
+  <li>Development Cycle Time: The time from when work begins until it is deployed to production. Done.</li>
+  <li>Lead Time: The time taken from start to end of the value stream.</li>
+  <li>Process Time / Value Add Time: The time spent executing a particular process.</li>
+  <li>Wait Time / Non-value Time: The time between processes where no activity is occurring.</li>
+  <li>Percent Complete and Accurate: The percentage of work from a process that is
+ rejected by the next process. If coding fails code review 20% of the time,
+ it’s %C/A is 80%.</li>
+</ul>
+
+<p><img src="../images/VSM-Card-Example.png" width="50%" /></p>
+
+<h3 id="identify-source-of-request">Identify source of request</h3>
+
+<p><img src="../images/request-example.png" width="30%" /></p>
+
+<p><em>Example:</em> Refine Epic</p>
+
+<p>For each source of <em>Requests</em></p>
+
+<ol>
+  <li>What is the outcome of that step, or next step?</li>
+  <li>Who is involved in that step?</li>
+  <li>How long does this step take?</li>
+  <li>How long between the previous and current steps?</li>
+</ol>
+
+<h3 id="identify-rework-loops-for-each-step">Identify Rework Loops for each step</h3>
+
+<p><img src="../images/rework-example.png" width="30%" /></p>
+
+<ol>
+  <li>To which steps do we return to from this one for corrections?</li>
+  <li>How often is work rejected from this step (percentage complete and accurate)?</li>
+</ol>
+
+<h3 id="identify-value-added-time-cycle-time-and-lead-time">Identify value added time, cycle time, and lead time</h3>
+
+<p><a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%" /></a></p>
+
+<ol>
+  <li>What is the total value time (time spent doing work) from conception to production?</li>
+  <li>What is the total non-value time (time waiting) from conception to production?</li>
+</ol>
+
+<h2 id="outcomes">Outcomes</h2>
+
+<ul>
+  <li>Visual representation of the value stream(s) of the team.</li>
+  <li>Identify possible constraints to flow based on value added time, cycle time, and lead time.</li>
+</ul>
+
+<h2 id="tips">Tips</h2>
+
+<ul>
+  <li>Involve all team members associated to any part of the process of getting value from conception to production.</li>
+  <li>Review and maintain value stream map to show wins associated to implementing improvement.</li>
+  <li>Take into account all potential flows for team processes, and value stream those as well.</li>
+</ul>
+
+<h2 id="value">Value</h2>
+
+<p>As a team, we want to understand how to value stream map our team processes, so that we may understand bottlenecks associated to delivering value, and identify areas of improvement.</p>
+
+<h2 id="acceptance-criteria">Acceptance Criteria</h2>
+
+<ul>
+  <li>Value stream all things associated to delivering value.</li>
+  <li>Create action items of improvement from exercise.</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://creately.com/blog/diagrams/value-stream-mapping-guide/">Value Stream Mapping Guide</a></li>
+  <li><a href="https://learning.oreilly.com/library/view/value-stream-mapping/9780071828918/">Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation</a></li>
+</ul>
+
 
     <div style="float:left;font-size:.8em;">
   <a href="https://creativecommons.org/licenses/by-sa/4.0/" align="right">Licensed Creative Commons Attribution-ShareAlike 4.0 International </a>
