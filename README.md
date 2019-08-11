@@ -33,7 +33,7 @@ The format should be
 ```
 ---
 layout: post
-author: <your authur userid>
+author: <your author userid>
 ---
 Blog intro paragraph
 
