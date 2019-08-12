@@ -6,6 +6,11 @@
   "content": "Latest Posts        Demo    Example blog post intro    "
  },
  {
+  "title": "Coming soon",
+  "url": "/docs/playbooks/coming-soon.html",
+  "content": "Coming soonOh yeah, were working on it!"
+ },
+ {
   "title": "References",
   "url": "/docs/references/index.html",
   "content": "ReferencesUseful Reference Material"
@@ -23,7 +28,7 @@
  {
   "title": "Lean Process",
   "url": "/docs/playbooks/lean/index.html",
-  "content": "Lean Process  Value Stream Mapping          Value Stream Orientation      Value Stream Mapping Workshop      "
+  "content": "Lean ProcessThe DevOps L in CALMS is for Lean. Without utilizing Lean principles and process for software delivery, DevOps is lost.The Dojo experience is all about reinforcing Lean principles and practices into the team DNA to enable programs success.The Value Stream  Value Stream Team Orientation  Value Stream Mapping WorkshopApplying Lean Principles  The 7 Lean Principles  The 7 Wastes in Software Development  Cost of DelayHistory of Lean  Deming  Popendiek"
  },
  {
   "title": "Metrics",

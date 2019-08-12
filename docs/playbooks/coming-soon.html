@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Demo</title>
+  <title>DevOps Dojo Consortium | Coming soon</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -79,7 +79,10 @@
           
           
           
-          <li class="">
+          <!--this will break if context isn't in the first part of the url-->
+          
+          
+          <li class="active">
             
             <a href="/docs/index.html">DOCS</a>
             
@@ -88,10 +91,7 @@
           
           
           
-          <!--this will break if context isn't in the first part of the url-->
-          
-          
-          <li class="active">
+          <li class="">
             
             <a href="/blog.html">BLOG</a>
             
@@ -130,26 +130,105 @@
 </div><!-- END header -->
   <div class="margin-bottom-20"></div>
   <div class="container">
-    <h1>Demo</h1>
-<p>
+    <div class="row margin-bottom-50">
+
+    <!----- Docs Navigation ----->
+  <div class="col-md-2">
+
+    <div class="docs-navigation">
+      
+      
+      <h2><a onclick="toggleMenu(this, '#references');"><i class="fa fa-chevron-right pale-blue"></i> References</a></h2>
+      <ul id="references" class="hidden">
+      
+        
+        <li >
+          <a href="/docs/references/index.html">Overview</a></li>
+        
+      </ul>
+      
+      
+      <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
+      <ul id="playbooks" >
+      
+        
+        <li >
+          <a href="/docs/playbooks/index.html">Overview</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/culture/index.html">Culture</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/automation/index.html">Automation</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
+        
+        <li >
+          <a href="/docs/playbooks/sharing/index.html">Sharing</a></li>
+        
+      </ul>
+      
+    </div>
+  </div><!-- END col-md-3 docs-navigation -->
+
+
+  <!----- Looper Docs Content ----->
+  <div class="col-md-10 docs-content">
+    
+    <div style="float:right;font-size:.7em;">
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/coming-soon.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+</div>
+
+    
+    
+<div style="font-size: 12px;">
+  <p><a href="/">Home</a> >
   
-
+    
+      <a href="/docs/"
+        style="text-transform: capitalize"
+      >docs</a> > 
+    
   
-  <span>
-      Written by <a href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
-  </span>
+    
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
   
-  <br>
-  03 Aug 2019
-</p>
+    
+      <span style="font-weight: bold;">Coming soon</span>
+    
+  </p>
+</div>
 
-<p>Example blog post intro</p>
+    <div style="float:right;font-size:.8em;">
+  
+  
+</div><br>
 
-<!--more-->
+    <h1 id="coming-soon">Coming soon</h1>
 
-<p>The rest of the blog post after the first para</p>
+<p>Oh yeah, we’re working on it!</p>
 
 
+    <div style="float:right;font-size:.8em;">
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" align="right">Licensed Creative Commons Attribution-ShareAlike 4.0 International </a>
+</div>
+
+    <script>
+var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
+for (var i = 0; i < headings.length; i++)
+{ headings[i].innerHTML = '<a href="#' + headings[i].id + '">' + headings[i].innerHTML + '</a>'; }
+</script>
+
+  </div><!-- END col-md-9 docs-content -->
+
+</div><!-- END row -->
 
   </div><!-- END container -->
 </div><!-- END wrap -->
