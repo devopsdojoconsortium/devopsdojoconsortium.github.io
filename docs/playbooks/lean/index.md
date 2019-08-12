@@ -14,11 +14,11 @@ The Dojo experience is all about reinforcing Lean principles and practices into 
 - [Value Stream Mapping Workshop](./wm-vsm.html)
 
 ### Applying Lean Principles
-- [The 7 Lean Principles](./leanPrinciples.html)
-- [The 7 Wastes in Software Development](./leanWaste.html)
-- [Cost of Delay](./costOfDelay.html)
+- [The 7 Lean Principles](./coming-soon.html)
+- [The 7 Wastes in Software Development](./coming-soon.html)
+- [Cost of Delay](./coming-soon.html)
 
 ### History of Lean
-- [Deming](./deming.html)
-- [Popendiek](./popendiek.html)
+- [Deming](./coming-soon.html)
+- [Popendiek](./coming-soon.html)
 
