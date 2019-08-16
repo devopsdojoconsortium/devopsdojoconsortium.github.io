@@ -70,6 +70,8 @@ For each source of _Requests_
 The below sample is for a 3 day workshop that focuses more on the flow of work and less on the numbers.  If you would like to go into more of the metrics extending the workshop to 5 days would allow for that.
 
 #### Day 1
+- Workshop working agreements
+- Review of workshop charter
 - Create/interate through current state value stream map
 
 #### Day 2
@@ -78,7 +80,7 @@ The below sample is for a 3 day workshop that focuses more on the flow of work a
 - Start future sate value stream map
 
 #### Day 3
-- Complete future state value steram map
+- Complete future state value stream map
 - Document/prioritize Kiazen improvement opportunities
 
 ## Tips
