@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Value Stream Mapping Workshop
-authors: [adixon, bfinster, nnicholson, pgibbs]
+authors: [adixon, bfinster, nnicholson, pgibbs, bburbank]
 side-navigation: docs-navigation.html
 ---
 
@@ -65,6 +65,23 @@ For each source of _Requests_
 
 - Visual representation of the value stream(s) of the team.
 - Identify possible constraints to flow based on value added time, cycle time, and lead time.
+
+## Sample Workshop Agenda
+The below sample is for a 3 day workshop that focuses more on the flow of work and less on the numbers.  If you would like to go into more of the metrics extending the workshop to 5 days would allow for that.
+
+#### Day 1
+- Workshop working agreements
+- Review of workshop charter
+- Create/interate through current state value stream map
+
+#### Day 2
+- Refine Value Stream Map and add data points
+- Identify waste and oppotunities to improve the flow of work
+- Start future sate value stream map
+
+#### Day 3
+- Complete future state value stream map
+- Document/prioritize Kiazen improvement opportunities
 
 ## Tips
 
