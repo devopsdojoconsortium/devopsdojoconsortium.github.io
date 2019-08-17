@@ -11,8 +11,8 @@
       <ul id="{{ item.id }}">
       {% endif %}
         {% for entry in item.subfolderitems %}
-        {% assign inpath = entry.context | remove: "index" %}
-        <li {% if page.url contains inpath %}class="active"{% endif %}>
+        {% assign pathArr = page.url | split: "/" %}
+        <li {% if entry.context contains pathArr[3] or page.url contains entry.context%}class="active"{% endif %}>
           <a href="{{entry.context}}.html">{{ entry.page }}</a></li>
         {% endfor %}
       </ul>
