@@ -16,7 +16,7 @@ things, development through tests into operations, while preserving world class
 reliability, operation, and security. DevOps is not about what you do, but what
 your outcomes are. So many things that we associate with DevOps, such as
 communication and culture, fit underneath this very broad umbrella of beliefs
-and practices.<br><br>-- Gen Kim, 2014
+and practices.<br><br>-- Gene Kim, 2014
 </blockquote>
 
 Each of the Dojos operate in their particular contexts with individualized implementation, but the overall goal is improving the
