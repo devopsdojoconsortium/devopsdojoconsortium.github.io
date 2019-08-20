@@ -252,10 +252,6 @@ Proper source management is foundational. Everything related to value delivery m
 Developer driven testing is required for CD to function. Here's some resources to get you started and some ideas to help you explore new way to get effective testing done.
 
 - [FIRST Principles](http://agileinaflash.blogspot.com/2009/02/first.html)
-- [SDE Testing Team](http://testing.walmart.com/)
-  - [Terms](http://testing.walmart.com/testsolutions/testing-practices/testing-terms.html)
-  - [Tools](http://testing.walmart.com/start-testing.html)
-  - [Support](http://testing.walmart.com/support.html)
 - [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
 - [Code Coverage Targets](https://martinfowler.com/bliki/TestCoverage.html)
 - [Microservice Testing Strategies](https://martinfowler.com/articles/microservice-testing/)
