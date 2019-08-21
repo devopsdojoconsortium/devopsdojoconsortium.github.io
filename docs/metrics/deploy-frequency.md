@@ -44,4 +44,4 @@ rapidly and reduce [MTTR](./mean-time-to-repair.html).
 
 ### References
 
-- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate."](https://www.walmart.com/ip/Accelerate-The-Science-of-Lean-Software-and-DevOps-Building-and-Scaling-High-Performing-Technology-Organizations/569479276)
+- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate."](https://itrevolution.com/book/accelerate/)

@@ -10,7 +10,7 @@ The average time from identifying a unit of work as "Ready to Start" to "Product
 
 "Software delivery performance is a combination of three metrics: lead time, [release frequency](./deploy-frequency.html), and [MTTR](./mean-time-to-repair.html). [Change fail rate](./change-fail-rate.html) is not included, though it is highly correlated."
 
-["Accelerate"](https://www.walmart.com/ip/Accelerate-The-Science-of-Lean-Software-and-DevOps-Building-and-Scaling-High-Performing-Technology-Organizations/569479276) uses Lead Time for Development Cycle Time and Release Frequency for [Deploy Frequency](./deploy-frequency.html).
+["Accelerate"](https://itrevolution.com/book/accelerate/) uses Lead Time for Development Cycle Time and Release Frequency for [Deploy Frequency](./deploy-frequency.html).
 
 ### What is the intended behavior?
 
@@ -36,6 +36,6 @@ Reduce the time it takes to deliver refined work to production.
 - [Change fail rate](./change-fail-rate.html) increases.
 
 ### References
-- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate"](https://www.walmart.com/ip/Accelerate-The-Science-of-Lean-Software-and-DevOps-Building-and-Scaling-High-Performing-Technology-Organizations/569479276)
+- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate"](https://itrevolution.com/book/accelerate/)
 
 
