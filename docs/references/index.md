@@ -131,7 +131,7 @@ resources we've found helpful as we've continued to improve.
 
 ### Implementing Domain-Driven Design: by Vaughn Vernon
 
-- [O'reilly Books](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
+- [Purchase Links](https://www.goodreads.com/book/show/15756865-implementing-domain-driven-design)
 
 <pre>
   Implementing Domain-Driven Design presents a top-down approach to understanding domain-driven
@@ -150,7 +150,7 @@ resources we've found helpful as we've continued to improve.
 
 ### Working Effectively with Legacy Code by Michael Feathers
 
-- [O'reilly Books](https://www.oreilly.com/library/view/working-effectively-with/0131177052/)
+- [Purchase](https://www.goodreads.com/book/show/44919.Working_Effectively_with_Legacy_Code)
 
 <pre>
    Is your code easy to change? Can you get nearly instantaneous feedback when you do change it?

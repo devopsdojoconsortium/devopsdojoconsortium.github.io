@@ -101,5 +101,5 @@ As a team, we want to understand how to value stream map our team processes, so 
 ## References
 
 - [Value Stream Mapping Guide](https://creately.com/blog/diagrams/value-stream-mapping-guide/)
-- [Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation](https://learning.oreilly.com/library/view/value-stream-mapping/9780071828918/)
+- [Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation](https://books.google.com/books/about/Value_Stream_Mapping_How_to_Visualize_Wo.html?id=MeFrAAAAQBAJ)
 
