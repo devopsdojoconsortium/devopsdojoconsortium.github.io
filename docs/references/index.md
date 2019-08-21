@@ -4,12 +4,12 @@ title: References
 side-navigation: docs-navigation.html
 ---
 
-# {{ page.title }}
+# References
 
 Continuous Delivery isn't new. It's been commonplace in many companies for over a decade. Included here is a list of information
 resources we've found helpful as we've continued to improve.
 
-- [{{ page.title }}](#pagetitle)
+- [References](#references)
     - [Microservices](#microservices)
     - [Understanding DevOps](#understanding-devops)
     - [Continuous Integration](#continuous-integration)
