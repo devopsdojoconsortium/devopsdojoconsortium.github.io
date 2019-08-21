@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Metrics Definitions
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
@@ -16,7 +17,6 @@ and how they can be used and mis-used.
 - [Commit Frequency](./commit-frequency.html)
 - [Build Cycle Time](./build-cycle-time.html)
 - [Average Build Downtime](./average-build-downtime.html)
-- [Build Duration](./build-duration.html)
 
 ### CD Execution
 

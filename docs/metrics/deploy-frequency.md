@@ -11,7 +11,7 @@ averaged by team size (deploys / day / developer).
 
 "Software delivery performance is a combination of three metrics: [lead time](./development-cycle-time.html), release frequency, and [MTTR](./mean-time-to-repair.html). [Change fail rate](./change-fail-rate.html) is not included, though it is highly correlated."
 
-["Accelerate"](https://www.walmart.com/ip/Accelerate-The-Science-of-Lean-Software-and-DevOps-Building-and-Scaling-High-Performing-Technology-Organizations/569479276) uses Lead Time for [Development Cycle Time](./development-cycle-time.html) and Release Frequency for Deploy Frequency.
+["Accelerate"](https://itrevolution.com/book/accelerate/) uses Lead Time for [Development Cycle Time](./development-cycle-time.html) and Release Frequency for Deploy Frequency.
 
 ### What is the intended behavior?
 
@@ -42,7 +42,7 @@ rapidly and reduce [MTTR](./mean-time-to-repair.html).
 - [Feature Flagging](https://martinfowler.com/articles/feature-toggles.html)
 
 ### References
-- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate."](https://www.walmart.com/ip/Accelerate-The-Science-of-Lean-Software-and-DevOps-Building-and-Scaling-High-Performing-Technology-Organizations/569479276)
+- Nicole Forsgren PhD, Jez Humble & Gene Kim. ["Accelerate."](https://itrevolution.com/book/accelerate/)
 
 _[Back To Bifrost](../index.html)_
 

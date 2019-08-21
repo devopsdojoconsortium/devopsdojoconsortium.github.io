@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Build Cycle Time
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
@@ -27,5 +28,3 @@ amplify feedback loops.
 ### When over-driven, what metrics are impacted?
 
 - [Quality](./quality.html) decreases if testing steps are skipped.
-
-

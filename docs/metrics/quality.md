@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Quality
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
