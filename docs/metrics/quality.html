@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Quality</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/quality.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Quality</span>
     
   </p>
 </div>
@@ -224,11 +218,38 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="quality">Quality</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>Quality is measured as the percentage of finished work that is marked as defect
+type for the reporting period.</p>
 
-<p>This is WIP…</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Help teams continuously triage and complete defect backlog items at a consistent
+rate. Try and drive this percentage lower without deferring defects.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Identify root cause.</li>
+  <li>Add tests to prevent root cause.</li>
+  <li>Review the team quality process and look for improvement items.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Defects are entered as additional stories (seen by growing throughput, but
+lowering customer satisfaction and complaints)</li>
+</ul>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./work-in-progress.html">WIP</a> metric increases for defect types.</li>
+  <li>Feature delivery is impacted as defects are over prioritized.</li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Productivity</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/productivity.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Productivity</span>
     
   </p>
 </div>
@@ -224,11 +218,47 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="productivity">Productivity</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>Throughput per week. This is measured by how many
+items were finished as a trend over time. This includes all items,
+defects and story work.</p>
 
-<p>This is WIP…</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Help teams find what level of throughput per week is consistently achievable and
+to find ways to increase this over time by improving their processes.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Smaller stories are easier to understand and deliver.</li>
+  <li>Minimize hard dependencies. Each hard dependency reduces the odds of on-time
+delivery by 50%.</li>
+  <li>Swarm stories so that the team is working as a unit to deliver faster.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>More, smaller tasks.</li>
+  <li>Cherry pick easy, low priority items.</li>
+  <li>Skip quality steps.</li>
+  <li>Prematurely sign-off work only to have defects reported later.</li>
+</ul>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./quality.html">Quality</a> defect ratio goes up as more defects are reported.</li>
+  <li><a href="./work-in-progress.html">WIP</a> increases as teams start more work to look more
+busy.</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p><a href="https://hbr.org/2012/05/six-myths-of-product-development">Harvard Business Review: Six Myths of Product Development</a></p>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

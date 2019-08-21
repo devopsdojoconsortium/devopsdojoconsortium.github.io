@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Change Fail Rate</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/change-fail-rate.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Change Fail Rate</span>
     
   </p>
 </div>
@@ -224,11 +218,46 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="change-fail-rate">Change Fail Rate</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>The percentage of changes that result in negative customer impact, system degradation, or rollback.</p>
 
-<p>This is WIP…</p>
+<p><code class="highlighter-rouge">changeFailRate = impactingChangeCount / changeCount</code></p>
+
+<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./deploy-frequency.html">release frequency</a>, and <a href="./mean-time-to-repair.html">MTTR</a>. Change fail rate is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a> and Release Frequency for <a href="./deploy-frequency.html">Deploy Frequency</a>.</p>
+
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Reduce the percentage of failed changes to less than 15%.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Release more, smaller changes to increase the odds of success and reduce the impact of failure.</li>
+  <li>Identify root cause for each failure and improve the automated quality checks.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Deploy fixes without recording the defect.</li>
+  <li>Create defect review meetings and re-classify defects as feature requests.</li>
+  <li>Re-deploy the latest working version to increase deploy count.</li>
+</ul>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./deploy-frequency.html">Deploy frequency</a> decreases as focus is placed on “zero defect” changes.</li>
+</ul>
+
+<h3 id="references">References</h3>
+<ul>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

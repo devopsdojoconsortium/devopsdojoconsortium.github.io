@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Development Cycle Time</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/development-cycle-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Development Cycle Time</span>
     
   </p>
 </div>
@@ -224,11 +218,48 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="development-cycle-time">Development Cycle Time</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>The average time from identifying a unit of work as “Ready to Start” to “Production”. Target average time is less than 60 minutes.</p>
 
-<p>This is WIP…</p>
+<p>“Software delivery performance is a combination of three metrics: lead time, <a href="./deploy-frequency.html">release frequency</a>, and <a href="./mean-time-to-repair.html">MTTR</a>. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for Development Cycle Time and Release Frequency for <a href="./deploy-frequency.html">Deploy Frequency</a>.</p>
+
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Reduce the time it takes to deliver refined work to production.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Decompose work so it can be delivered in smaller increments and by more team members.</li>
+  <li>Identify and remove process waste, handoffs, and delays in the construction process.</li>
+  <li>Improve testing efficiency for more rapid feedback loops.</li>
+  <li>Automate and standardize the build.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Move things to “Done” status that are not in production.</li>
+  <li>Move items directly from “Backlog” to “Done” after deploying to production.</li>
+  <li>Split work into tasks that must be completed before work can be delivered (development task, testing task,
+etc.).</li>
+</ul>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./quality.html">Quality</a> decreases as quality processes are skipped.</li>
+  <li><a href="./change-fail-rate.html">Change fail rate</a> increases.</li>
+</ul>
+
+<h3 id="references">References</h3>
+<ul>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Metrics Definitions</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Metrics Definitions</span>
     
   </p>
 </div>
@@ -224,11 +218,54 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="metrics-definitions">Metrics Definitions</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>Metrics are key to organizational improvement. If we do not measure, then any
+attempt at improvement is aimless. Metrics, like any tool, must be used
+correctly to drive the improvement we need. The following are important metrics,
+and how they can be used and mis-used.</p>
 
-<p>This is WIP…</p>
+<h3 id="ci-execution">CI Execution</h3>
+
+<ul>
+  <li><a href="./commit-frequency.html">Commit Frequency</a></li>
+  <li><a href="./build-cycle-time.html">Build Cycle Time</a></li>
+  <li><a href="./average-build-downtime.html">Average Build Downtime</a></li>
+</ul>
+
+<h3 id="cd-execution">CD Execution</h3>
+
+<ul>
+  <li><strong>Throughput</strong>
+    <ul>
+      <li><a href="./development-cycle-time.html">Development Cycle Time</a></li>
+      <li><a href="./deploy-frequency.html">Deploy Frequency</a></li>
+    </ul>
+  </li>
+  <li><strong>Stability</strong>
+    <ul>
+      <li><a href="./change-fail-rate.html">Change Failure Rate</a></li>
+      <li><a href="./mean-time-to-repair.html">Mean Time to Repair</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="delivering-quality">Delivering Quality</h3>
+
+<ul>
+  <li><a href="./code-coverage.html">Code Coverage</a></li>
+  <li><a href="./quality.html">Quality</a></li>
+</ul>
+
+<h3 id="workflow-management">Workflow Management</h3>
+
+<ul>
+  <li><a href="./development-cycle-time.html">Development Cycle Time</a></li>
+  <li><a href="./productivity.html">Productivity</a></li>
+  <li><a href="./total-lead-time.html">Total Lead Time</a></li>
+  <li><a href="./work-in-progress.html">Work In Process (WIP)</a></li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

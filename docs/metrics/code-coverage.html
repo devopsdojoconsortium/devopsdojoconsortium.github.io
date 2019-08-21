@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Code Coverage</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/code-coverage.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Code Coverage</span>
     
   </p>
 </div>
@@ -224,11 +218,64 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="code-coverage">Code Coverage</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%.</p>
 
-<p>This is WIP…</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Provide the information needed to identify risky or complicated portions of the code that are not sufficiently covered by tests.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Write tests for code that SHOULD be covered that isn’t.</li>
+  <li>Refactor the application to improve testability.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Tests are written for code that receives no value from testing.</li>
+  <li>Test code is written that does not check for failures.</li>
+  <li>Code is inappropriately excluded from test coverage reporting.</li>
+</ul>
+
+<p>Example: The following test will result in 100% function, branch, and line coverage with no behavior tested.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Returns the sum of two integers */</span>
+<span class="cm">/* Returns NaN for non-integers */</span>
+<span class="kd">function</span> <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">NaN</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Should add two whole numbers</span><span class="dl">'</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">not</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">NaN</span><span class="p">;</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">not</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">null</span><span class="p">;</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>The following will report the same code coverage results</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Should add two whole numbers</span><span class="dl">'</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases with additional development time dedicated to chasing the coverage metric.</li>
+  <li><a href="./quality.html">Quality</a> decreases as poor quality tests hide lack of real code
+coverage.</li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Average Build Downtime</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/average-build-downtime.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Average Build Downtime</span>
     
   </p>
 </div>
@@ -224,11 +218,37 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="average-build-downtime">Average Build Downtime</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>The average length of time between when a build breaks and when it is fixed.</p>
 
-<p>This is WIP…</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Decrease the average time to recover from a broken build.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<ul>
+  <li>Refactor to improve testability and modularity.</li>
+  <li>Improve tests to locate problems more rapidly.</li>
+  <li>Decrease the size of the component to reduce complexity.</li>
+  <li>Add automated alerts for broken builds.</li>
+</ul>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Re-build the previous version.</li>
+  <li>Remove tests that are failing.</li>
+</ul>
+
+<h3 id="when-over-emphasized-what-metrics-are-impacted">When over-emphasized, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./commit-frequency.html">Commit frequency</a> decreases as additional manual or automated process overhead is added before integration to master.</li>
+  <li><a href="./productivity.html">Productivity</a> decreases as manual verification steps are added to ensure each pull request does not break the build.</li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

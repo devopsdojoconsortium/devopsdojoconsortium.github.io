@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Metrics</title>
+  <title>DevOps Dojo Consortium | Total Lead Time</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
+      <ul id="playbooks" class="hidden">
       
         
         
@@ -170,7 +170,7 @@
           <a href="/docs/playbooks/lean/index.html">Lean</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/index.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/total-lead-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,19 +202,13 @@
     
   
     
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
-  
-    
-      <a href="/docs/playbooks/metrics/"
+      <a href="/docs/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Metrics</span>
+      <span style="font-weight: bold;">Total Lead Time</span>
     
   </p>
 </div>
@@ -224,11 +218,42 @@
   
 </div><br>
 
-    <h1 id="metrics">Metrics</h1>
+    <h1 id="total-lead-time">Total Lead Time</h1>
 
-<p>The right metrics used the right way in the right combination are key to improvement.</p>
+<p>This shows the average time it takes for a new request to be delivered. This is
+measured from the creation date to release date for each unit of work and includes <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
-<p>This is WIP…</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+
+<p>Identify over utilized teams, backlogs that need more Product Owner attention,
+or in conjunction with <a href="./productivity.html">productivity</a> to help teams optimize their processes.</p>
+
+<h3 id="how-is-it-improved">How is it improved?</h3>
+
+<p>Relentlessly remove old items from the backlog.
+Improve team processes to reduce <a href="./development-cycle-time.html">Development Cycle Time</a>.
+Use InnerSourcing to offload work on to teams with capacity.
+Reallocate capability ownership to another team.</p>
+
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
+
+<ul>
+  <li>Requests can be tracked in spreadsheet or other locations and then added to
+the backlog just before development. This can be identified by decreased
+customer satisfaction.</li>
+  <li>Reduce feature refining rigour.</li>
+</ul>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./quality.html">Quality</a> is reduced as less time is spent refining and defining
+how to validate the feature.</li>
+  <li><a href="./productivity.html">Productivity</a> is reduced if tightly coupled components are
+shifted to another team or excessive communication is required for
+<a href="https://paypal.github.io/InnerSourceCommons/">InnerSourcing</a>.</li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
