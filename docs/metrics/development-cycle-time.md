@@ -6,7 +6,7 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-The average time from identifying a unit of work as ["Ready to Start"](../glossary.html#ready-to-start) to "Production". Target average time is less than 60 minutes.
+The average time from identifying a unit of work as "Ready to Start" to "Production". Target average time is less than 60 minutes.
 
 "Software delivery performance is a combination of three metrics: lead time, [release frequency](./deploy-frequency.html), and [MTTR](./mean-time-to-repair.html). [Change fail rate](./change-fail-rate.html) is not included, though it is highly correlated."
 
