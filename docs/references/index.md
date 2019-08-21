@@ -87,7 +87,6 @@ resources we've found helpful as we've continued to improve.
 
 ### Accelerate: by Nicole Forsgren, Jez Humble, & Gene Kim
 
-- [Safari Books](https://www.safaribooksonline.com/library/view/accelerate/9781457191435/)
 - [Purchase](https://itrevolution.com/book/accelerate/)
 
 <pre>
@@ -104,7 +103,7 @@ resources we've found helpful as we've continued to improve.
 
 ### BDD in Action: by John Ferguson Smart
 
-- [Safari Books](https://www.safaribooksonline.com/library/view/bdd-in-action/9781617291654/)
+- [Manning Books](https://www.manning.com/books/bdd-in-action)
 
 <pre>
   BDD in Action teaches you BDD principles and practices and shows you how to integrate them into your
@@ -122,7 +121,6 @@ resources we've found helpful as we've continued to improve.
 
 ### Continuous Delivery: by Jez Humble & David Farley
 
-- [Safari Books](https://www.safaribooksonline.com/library/view/continuous-delivery-reliable/9780321670250/)
 - [Purchase](https://continuousdelivery.com/)
 
 <pre>
@@ -133,7 +131,7 @@ resources we've found helpful as we've continued to improve.
 
 ### Implementing Domain-Driven Design: by Vaughn Vernon
 
-- [Safari Books](https://www.safaribooksonline.com/library/view/implementing-domain-driven-design/9780133039900/)
+- [O'reilly Books](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
 
 <pre>
   Implementing Domain-Driven Design presents a top-down approach to understanding domain-driven
@@ -152,7 +150,7 @@ resources we've found helpful as we've continued to improve.
 
 ### Working Effectively with Legacy Code by Michael Feathers
 
-- [Safari Books](https://www.safaribooksonline.com/library/view/working-effectively-with/0131177052/)
+- [O'reilly Books](https://www.oreilly.com/library/view/working-effectively-with/0131177052/)
 
 <pre>
    Is your code easy to change? Can you get nearly instantaneous feedback when you do change it?
