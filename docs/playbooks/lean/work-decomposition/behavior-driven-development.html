@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Deploy Frequency</title>
+  <title>DevOps Dojo Consortium | Behavior Driven Development</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -166,8 +166,8 @@
           <a href="/docs/playbooks/automation/index.html">Automation</a></li>
         
         
-        <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+        <li class="active">
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
         <li >
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/deploy-frequency.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/lean/work-decomposition/behavior-driven-development.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,13 +202,25 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
         style="text-transform: capitalize"
-      >metrics</a> > 
+      >playbooks</a> > 
     
   
     
-      <span style="font-weight: bold;">Deploy Frequency</span>
+      <a href="/docs/playbooks/lean/"
+        style="text-transform: capitalize"
+      >lean</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/lean/work-decomposition/"
+        style="text-transform: capitalize"
+      >work decomposition</a> > 
+    
+  
+    
+      <span style="font-weight: bold;">Behavior Driven Development</span>
     
   </p>
 </div>
@@ -230,55 +242,102 @@
   
 </div><br>
 
-    <h1 id="deploy-frequency">Deploy Frequency</h1>
+    <h1 id="behavior-driven-development">Behavior Driven Development</h1>
 
-<p>How frequently the team deploys to production. This is
-averaged by team size (deploys / day / developer).</p>
+<p>Behavior Driven Development acceptance criteria are the testable outcomes agreed upon by the team,
+including development, quality, and business that express the definition of done for a user story.</p>
 
-<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, release frequency, and <a href="./mean-time-to-repair.html">MTTR</a>. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+<hr />
 
-<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a> and Release Frequency for Deploy Frequency.</p>
+<h2 id="recommended-practices">Recommended Practices</h2>
 
-<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
+<p>All tests follow the Arrange, Act, Assert pattern. Gherkin is a domain specific language that allows acceptance criteria to be expressed with this pattern in a way that is understandable to all stakeholders.</p>
 
-<p>Small changes deployed very frequently to exercise the ability to fix production
-rapidly and reduce <a href="./mean-time-to-repair.html">MTTR</a>.</p>
+<p>Example:</p>
 
-<h3 id="how-is-it-improved">How is it improved?</h3>
+<div class="language-gherkin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">As</span> <span class="nf">an </span>hourly associate I want to be able to log my arrival time so that I can be paid correctly.
+
+<span class="nf">Given </span>I am not clocked in
+<span class="nf">When </span>I enter my associate number
+<span class="nf">Then </span>my arrival time will be logged
+<span class="nf">And </span>I will be notified of the time
+
+<span class="nf">Given </span>I am clocked in
+<span class="nf">When </span>I enter my associate number
+<span class="nf">And </span>I have been clocked in for more than 5 minutes
+<span class="nf">Then </span>I will be clocked out
+<span class="nf">And </span>I will be notified of the time
+
+<span class="nf">Given </span>I am clocked in
+<span class="nf">When </span>I enter my associate number
+<span class="nf">And </span>I have been clocked in for less than 5 minutes
+<span class="nf">Then </span>I will receive an error
+</code></pre></div></div>
+
+<h3 id="using-acceptance-criteria-to-negotiate-and-split">Using Acceptance Criteria to Negotiate and Split</h3>
+
+<p>With the above criteria, it may be acceptable to remove the time validation and accelerate delivery of the time logging ability. After delivery, the validation may not be required. If true, we’ve saved money and time by NOT delivering unneeded features.</p>
+
+<p>First we deliver the ability to clock in and see if we really do need the ability to verify.</p>
+
+<div class="language-gherkin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">As</span> <span class="nf">an </span>hourly associate I want to be able to log my arrival time so that I can be paid correctly.
+
+<span class="nf">Given </span>I am not clocked in
+<span class="nf">When </span>I enter my associate number
+<span class="nf">Then </span>my arrival time will be logged
+<span class="nf">And </span>I will be notified of the time
+
+<span class="nf">Given </span>I am clocked in
+<span class="nf">When </span>I enter my associate number
+<span class="nf">Then </span>I will be clocked out
+<span class="nf">And </span>I will be notified of the time
+</code></pre></div></div>
+
+<p>If, in production, we discover that the sanity check is required to prevent time clock issues, we can quickly add that behavior.</p>
+
+<div class="language-gherkin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">As</span> <span class="nf">an </span>hourly associate I want to be prevented from clocking out immediately after clocking in.
+
+<span class="nf">Given </span>I am clocked in
+<span class="nf">And </span>I have been clocked in for more than 5 minutes
+<span class="nf">When </span>I enter my associate number
+<span class="nf">Then </span>I will be clocked out
+<span class="nf">And </span>I will be notified of the time
+
+<span class="nf">Given </span>I am clocked in
+<span class="nf">And </span>I have been clocked in for less than 5 minutes
+<span class="nf">When </span>I enter my associate number
+<span class="nf">Then </span>I will receive an error
+</code></pre></div></div>
+
+<h3 id="tips">Tips</h3>
 
 <ul>
-  <li>Reduce <a href="./development-cycle-time.html">Development Cycle Time</a>.</li>
-  <li>Remove handoffs to other teams.</li>
-  <li>Remove manual or external approvals for change.</li>
-  <li>Move hard dependencies to soft dependencies with feature flags and contract tests.</li>
+  <li>Scenarios should be written from the point of view of the consumer.</li>
+  <li>Scenarios should be focused on a specific function and should not attempt to describe multiple behaviors.</li>
+  <li>If a story has more than 6 acceptance criteria, it can probably be split.</li>
+  <li>No acceptance test should contain more than 10 conditions. In fact, much less is recommended.</li>
 </ul>
 
-<h3 id="how-is-it-gamed">How is it gamed?</h3>
+<hr />
+
+<h2 id="value">Value</h2>
+
+<p>As a development team, we want to know the specific behaviors that define “done” for a user story so that we can predict delivery with a high level of confidence.</p>
+
+<h3 id="acceptance-criteria">Acceptance Criteria</h3>
 
 <ul>
-  <li>Re-deploying the same artifact repeatedly.</li>
-  <li>Building new artifacts that contain no changes.</li>
+  <li>All stakeholders agree that the scenarios fully describe the deliverable.</li>
+  <li>The scenarios are testable.</li>
+  <li>The scenarios are declarative. They describe what the expected behavior is, but not how it will be implemented.</li>
+  <li>The scenarios avoid describing explicit UI activity unless it is critical to the outcomes.</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h2 id="references">References</h2>
 
 <ul>
-  <li><a href="./change-fail-rate.html">Change Fail Rate</a> increases.</li>
-  <li><a href="./quality.html">Quality</a> decreases.</li>
-</ul>
-
-<h3 id="recommended-practices">Recommended Practices</h3>
-
-<ul>
-  <li><a href="https://trunkbaseddevelopment.com/">Trunk Based Development</a></li>
-  <li><a href="https://martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a></li>
-  <li><a href="https://martinfowler.com/articles/feature-toggles.html">Feature Flagging</a></li>
-</ul>
-
-<h3 id="references">References</h3>
-
-<ul>
-  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate.”</a></li>
+  <li><a href="https://cucumber.io/docs/gherkin/reference/">Gherkin Reference</a></li>
+  <li><a href="https://lizkeogh.com/behaviour-driven-development/">BDD Process Information</a></li>
 </ul>
 
 

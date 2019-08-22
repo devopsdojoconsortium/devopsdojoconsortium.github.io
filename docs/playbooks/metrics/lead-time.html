@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Productivity</title>
+  <title>DevOps Dojo Consortium | Lead Time</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/productivity.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/lead-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,62 +202,80 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Productivity</span>
+      <span style="font-weight: bold;">Lead Time</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="productivity">Productivity</h1>
+    <h1 id="lead-time">Lead Time</h1>
 
-<p>Throughput per week. This is measured by how many
-items were finished as a trend over time. This includes all items,
-defects and story work.</p>
+<p>This shows the average time it takes for a new request to be delivered. This is
+measured from the creation date to release date for each unit of work and includes <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Help teams find what level of throughput per week is consistently achievable and
-to find ways to increase this over time by improving their processes.</p>
+<p>Identify over utilized teams, backlogs that need more Product Owner attention,
+or in conjunction with <a href="./productivity.html">productivity</a> to help teams optimize their processes.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
-<ul>
-  <li>Smaller stories are easier to understand and deliver.</li>
-  <li>Minimize hard dependencies. Each hard dependency reduces the odds of on-time
-delivery by 50%.</li>
-  <li>Swarm stories so that the team is working as a unit to deliver faster.</li>
-</ul>
+<p>Relentlessly remove old items from the backlog.
+Improve team processes to reduce <a href="./development-cycle-time.html">Development Cycle Time</a>.
+Use Innersourcing to allow other teams to help when surges of work arrive.
+Re-assign, carefully, some components to another team to scale delivery.</p>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>More, smaller tasks.</li>
-  <li>Cherry pick easy, low priority items.</li>
-  <li>Skip quality steps.</li>
-  <li>Prematurely sign-off work only to have defects reported later.</li>
+  <li>Requests can be tracked in spreadsheet or other locations and then added to
+the backlog just before development. This can be identified by decreased
+customer satisfaction.</li>
+  <li>Reduce feature refining rigour.</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> defect ratio goes up as more defects are reported.</li>
-  <li><a href="./work-in-progress.html">WIP</a> increases as teams start more work to look more
-busy.</li>
+  <li><a href="./quality.html">Quality</a> is reduced as less time is spent refining and defining
+how to validate the feature.</li>
+  <li><a href="./productivity.html">Productivity</a> is reduced if tightly coupled components are
+shifted to another team or excessive communication is required for</li>
 </ul>
 
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
 
-<p><a href="https://hbr.org/2012/05/six-myths-of-product-development">Harvard Business Review: Six Myths of Product Development</a></p>
+<ul>
+  <li><a href="https://paypal.github.io/InnerSourceCommons/">InnerSourcing</a>.</li>
+</ul>
 
 
     <script>

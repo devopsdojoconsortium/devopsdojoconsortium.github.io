@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Average Build Downtime</title>
+  <title>DevOps Dojo Consortium | Code Coverage</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/average-build-downtime.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/code-coverage.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,51 +202,97 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Average Build Downtime</span>
+      <span style="font-weight: bold;">Code Coverage</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="average-build-downtime">Average Build Downtime</h1>
+    <h1 id="code-coverage">Code Coverage</h1>
 
-<p>The average length of time between when a build breaks and when it is fixed.</p>
+<p>Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%, but this is
+considered a situational reference and not a goal.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Decrease the average time to recover from a broken build.</p>
+<p>Provide the information needed to identify risky or complicated portions of the code that are not sufficiently covered by tests.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Refactor to improve testability and modularity.</li>
-  <li>Improve tests to locate problems more rapidly.</li>
-  <li>Decrease the size of the component to reduce complexity.</li>
-  <li>Add automated alerts for broken builds.</li>
+  <li>Write tests for code that SHOULD be covered that isn’t.</li>
+  <li>Refactor the application to improve testability.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Re-build the previous version.</li>
-  <li>Remove tests that are failing.</li>
+  <li>Tests are written for code that receives no value from testing.</li>
+  <li>Test code is written that does not check for failures.</li>
+  <li>Code is inappropriately excluded from test coverage reporting.</li>
 </ul>
 
-<h3 id="when-over-emphasized-what-metrics-are-impacted">When over-emphasized, what metrics are impacted?</h3>
+<p>Example: The following test will result in 100% function, branch, and line coverage with no behavior tested.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Returns the sum of two integers */</span>
+<span class="cm">/* Returns NaN for non-integers */</span>
+<span class="kd">function</span> <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span> <span class="o">%</span> <span class="mi">1</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">NaN</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Should add two whole numbers</span><span class="dl">'</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">not</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">NaN</span><span class="p">;</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)).</span><span class="nx">to</span><span class="p">.</span><span class="nx">not</span><span class="p">.</span><span class="nx">be</span><span class="p">.</span><span class="kc">null</span><span class="p">;</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>The following will report the same code coverage results</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Should add two whole numbers</span><span class="dl">'</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="nx">addWholeNumbers</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./commit-frequency.html">Commit frequency</a> decreases as additional manual or automated process overhead is added before integration to master.</li>
-  <li><a href="./productivity.html">Productivity</a> decreases as manual verification steps are added to ensure each pull request does not break the build.</li>
+  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases with additional development time dedicated to chasing the coverage metric.</li>
+  <li><a href="./quality.html">Quality</a> decreases as poor quality tests hide lack of real code
+coverage.</li>
 </ul>
 
 

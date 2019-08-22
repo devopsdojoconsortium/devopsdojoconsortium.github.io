@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Commit Frequency</title>
+  <title>DevOps Dojo Consortium | Release Frequency</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/commit-frequency.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/release-frequency.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,13 +202,19 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Commit Frequency</span>
+      <span style="font-weight: bold;">Release Frequency</span>
     
   </p>
 </div>
@@ -230,41 +236,41 @@
   
 </div><br>
 
-    <h1 id="commit-frequency">Commit Frequency</h1>
+    <h1 id="release-frequency">Release Frequency</h1>
 
-<p>The average frequency each developer on a team integrates tested, non-breaking code to trunk / master. Target is more than once per
-day per developer to reduce the size of change and speed value delivery.</p>
+<p>How frequently the team releases changes to production. This is
+averaged by team size (deploys / day / developer) to achieve lowest common denominator comparisons.</p>
+
+<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, release frequency, and <a href="./mean-time-to-repair.html">MTTR</a>. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<ul>
-  <li>Increase the frequency of code integration.</li>
-  <li>Reduce the size of each change.</li>
-  <li>Improve code review processes.</li>
-</ul>
+<p>Small changes deployed very frequently to exercise the ability to fix production
+rapidly, reduce <a href="./mean-time-to-repair.html">MTTR</a>, and accelerate value delivery.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Decompose code changes into smaller, non-breaking changes that are eventually feature complete.</li>
-  <li>Use <a href="https://lizkeogh.com/category/bdd/">Behavior Driven Development</a> to aid functional breakdown.</li>
-  <li>Use TDD to design more modular code that can be integrated more frequently.</li>
-  <li>Make new code reachable only by the tests or flagged off for other
-environments with feature flags.</li>
+  <li>Reduce <a href="./development-cycle-time.html">Development Cycle Time</a>.</li>
+  <li>Remove handoffs to other teams.</li>
+  <li>Remove manual or external approvals for change.</li>
+  <li>Move hard dependencies to soft dependencies with feature flags and contract tests.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Meaningless changes integrated to trunk.</li>
+  <li>Re-deploying the same artifact repeatedly.</li>
+  <li>Building new artifacts that contain no changes.</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> decreases when testing is skipped.</li>
-  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases due to additional
-review overhead.</li>
+  <li><a href="./change-fail-rate.html">Change Fail Rate</a> increases.</li>
+  <li><a href="./quality.html">Quality</a> decreases.</li>
 </ul>
 
 <h3 id="recommended-practices">Recommended Practices</h3>
@@ -273,6 +279,12 @@ review overhead.</li>
   <li><a href="https://trunkbaseddevelopment.com/">Trunk Based Development</a></li>
   <li><a href="https://martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a></li>
   <li><a href="https://martinfowler.com/articles/feature-toggles.html">Feature Flagging</a></li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate.”</a></li>
 </ul>
 
 

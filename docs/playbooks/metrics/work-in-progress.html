@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Quality</title>
+  <title>DevOps Dojo Consortium | WIP</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/quality.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/work-in-progress.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,52 +202,78 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Quality</span>
+      <span style="font-weight: bold;">WIP</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="quality">Quality</h1>
+    <h1 id="wip">WIP</h1>
 
-<p>Quality is measured as the percentage of finished work that is marked as defect
-type for the reporting period.</p>
+<p>Work in Process (WIP) is the total work that has been started but not
+completed. This includes <strong>all</strong> work, defects, tasks, stories, etc.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Help teams continuously triage and complete defect backlog items at a consistent
-rate. Try and drive this percentage lower without deferring defects.</p>
+<p>Teams should limit WIP and work together to complete WIP items in preference to
+starting new work.
+Use WIP limits to identify and exploit constraints in the <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Identify root cause.</li>
-  <li>Add tests to prevent root cause.</li>
-  <li>Review the team quality process and look for improvement items.</li>
+  <li>The team should focus on finishing items closest to being ready for
+production.</li>
+  <li>Set and do not exceed WIP limits for the team and for each step.
+    <ul>
+      <li>WIP limit guidance: 2N-1 where N is the number of team members capable of doing the work.</li>
+    </ul>
+  </li>
+  <li>Keep the Kanban board visible at all times.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Defects are entered as additional stories (seen by growing throughput, but
-lowering customer satisfaction and complaints)</li>
+  <li>Teams can update incomplete work to “done” before all quality steps have been
+completed.</li>
+  <li>Reduce the pace of starting new work without focusing on helping to complete
+WIP.</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./work-in-progress.html">WIP</a> metric increases for defect types.</li>
-  <li>Feature delivery is impacted as defects are over prioritized.</li>
+  <li><a href="./quality.html">Quality</a> metric decreases as additional defects are reported.</li>
+  <li><a href="./productivity.html">Productivity</a> metric decreases.</li>
 </ul>
 
 

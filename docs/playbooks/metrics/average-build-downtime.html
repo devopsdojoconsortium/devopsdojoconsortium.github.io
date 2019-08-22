@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Value Stream Orientation</title>
+  <title>DevOps Dojo Consortium | Average Build Downtime</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -166,11 +166,11 @@
           <a href="/docs/playbooks/automation/index.html">Automation</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/lean/value-stream-orientation.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/average-build-downtime.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -208,13 +208,13 @@
     
   
     
-      <a href="/docs/playbooks/lean/"
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
-      >lean</a> > 
+      >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Value Stream Orientation</span>
+      <span style="font-weight: bold;">Average Build Downtime</span>
     
   </p>
 </div>
@@ -222,34 +222,53 @@
     <div style="float:right;font-size:.8em;">
   
   <a
-    href="https://www.linkedin.com/in/drewdeal/">Drew Deal</a>
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
   
   
 </div><br>
 
-    <h1 id="value-stream-orientation">Value Stream Orientation</h1>
+    <h1 id="average-build-downtime">Average Build Downtime</h1>
 
-<h2 id="introduction">Introduction</h2>
+<p>The average length of time between when a build breaks and when it is fixed.</p>
 
-<p>One of the most important coaching goals in a Dojo challenge is to inspire the team to understand the system view, specifically how value flows from ideation all the way to deployment and support. It isn’t the “First Way” of DevOps for nothing. However, the question we often get sounds something like:</p>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<blockquote>
-  <p>Is it really necessary to train everyone regarding the overall system? Our developers need to be heads down and let the architects, RTE’s, and other Program leaders manage the big picture.</p>
-</blockquote>
+<p>Keep the pipelines always deployable by fixing broken builds as rapidly as possible. Broken builds are the highest priority since
+they prevent production fixes from being deployed in a safe, standard way.</p>
 
-<p>Of course as you read that question you can easily detect it resembles a defense of a well established management paradigm. Broaching this subject in your Dojo will require a healthy combination of some of these organizational attributes:</p>
+<h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Understanding that DevOps is more than just pipeline tooling skills.</li>
-  <li>Sufficient framing and preparation with managers that the team will be empowered toward autonomy while entrusted to the Dojo.</li>
-  <li>Trust that the Dojo coaches are working toward the good of all, not just the team members.</li>
-  <li>Openness that despite how teams are currently aligned, that teams can contribute realignment insights to improve feature lead times.</li>
-  <li>A catching on of the fact that software architecture is a skill vs being a role.</li>
+  <li>Refactor to improve testability and modularity.</li>
+  <li>Improve tests to locate problems more rapidly.</li>
+  <li>Decrease the size of the component to reduce complexity.</li>
+  <li>Add automated alerts for broken builds.</li>
+  <li>Ensure the proper team practice is in place to support each other in solving the problem as a team.</li>
 </ul>
 
-<p>Even heavily matrixed organizations mired in a negative cycle of pointing people’s attention back toward their siloed constraints are coming around to the realization that they must at least make the Value Stream visible in some way. We beleive the Dojo can demonstrate value to both the team and the programs they serve by establishing a Value Stream orientation in the early stages of the engagement. We map the value stream early on. We call out dependencies. We reduce handoffs where empowered. We report on the waste in handoffs where not empowered.</p>
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
 
-<p>In all this, we see time and time again that Value Stream orientation in the Dojo creates retained value for the team and creates viral value for other programs in the organization watching all this transpire.</p>
+<ul>
+  <li>Re-build the previous version.</li>
+  <li>Remove tests that are failing.</li>
+</ul>
+
+<h3 id="when-over-emphasized-what-metrics-are-impacted">When over-emphasized, what metrics are impacted?</h3>
+
+<ul>
+  <li><a href="./commit-frequency.html">Commit frequency</a> decreases as additional manual or automated process overhead is added before integration to master.</li>
+  <li><a href="./productivity.html">Productivity</a> decreases as manual verification steps are added to ensure each pull request does not break the build.</li>
+</ul>
+
 
     <script>
 var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");

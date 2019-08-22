@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | WIP</title>
+  <title>DevOps Dojo Consortium | Development Cycle Time</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/work-in-progress.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/development-cycle-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,60 +202,81 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">WIP</span>
+      <span style="font-weight: bold;">Development Cycle Time</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="wip">WIP</h1>
+    <h1 id="development-cycle-time">Development Cycle Time</h1>
 
-<p>Work in Process (WIP) is the total work that has been started but not
-completed. This includes <strong>all</strong> work, defects, tasks, stories, etc.</p>
+<p>The average time from starting work until release to production.</p>
+
+<p>“Software delivery performance is a combination of three metrics: lead time, <a href="./release-frequency.html">release frequency</a>, and <a href="./mean-time-to-repair.html">MTTR</a>. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for Development Cycle Time.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Teams should limit WIP and work together to complete WIP items in preference to
-starting new work.
-Use WIP limits to identify and exploit constraints in the <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
+<p>Reduce the time it takes to deliver refined work to production to mitigate the effects of priorities changing and to improve value delivery.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>The team should focus on finishing items closest to being ready for
-production.</li>
-  <li>Set and do not exceed WIP limits for the team and for each step.
-    <ul>
-      <li>WIP limit guidance: 2N-1 where N is the number of team members capable of doing the work.</li>
-    </ul>
-  </li>
-  <li>Keep the Kanban board visible at all times.</li>
+  <li>Decompose work so it can be delivered in smaller increments and by more team members.</li>
+  <li>Identify and remove process waste, handoffs, and delays in the construction process.</li>
+  <li>Improve testing efficiency for more rapid feedback loops.</li>
+  <li>Automate and standardize the build and deploy pipeline.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Teams can update incomplete work to “done” before all quality steps have been
-completed.</li>
-  <li>Reduce the pace of starting new work without focusing on helping to complete
-WIP.</li>
+  <li>Move things to “Done” status that are not in production.</li>
+  <li>Move items directly from “Backlog” to “Done” after deploying to production.</li>
+  <li>Split work into functional tasks that should be considered part of development (development task, testing task,
+etc.).</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> metric decreases as additional defects are reported.</li>
-  <li><a href="./productivity.html">Productivity</a> metric decreases.</li>
+  <li><a href="./quality.html">Quality</a> decreases as quality processes are skipped.</li>
+  <li><a href="./change-fail-rate.html">Change fail rate</a> increases.</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
 </ul>
 
 

@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | Total Lead Time</title>
+  <title>DevOps Dojo Consortium | MTTR</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/total-lead-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/mean-time-to-repair.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,56 +202,79 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Total Lead Time</span>
+      <span style="font-weight: bold;">MTTR</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="total-lead-time">Total Lead Time</h1>
+    <h1 id="mttr">MTTR</h1>
 
-<p>This shows the average time it takes for a new request to be delivered. This is
-measured from the creation date to release date for each unit of work and includes <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
+<p>Mean Time to Repair is the average time between when a incidents is
+detected and when it is resolved.</p>
+
+<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./release-frequency.html">release frequency</a>, and MTTR. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Identify over utilized teams, backlogs that need more Product Owner attention,
-or in conjunction with <a href="./productivity.html">productivity</a> to help teams optimize their processes.</p>
+<p>Improve the ability to more rapidly resolve system instability and service outages.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
-<p>Relentlessly remove old items from the backlog.
-Improve team processes to reduce <a href="./development-cycle-time.html">Development Cycle Time</a>.
-Use InnerSourcing to offload work on to teams with capacity.
-Reallocate capability ownership to another team.</p>
+<ul>
+  <li>Make sure the pipeline alway deployable.</li>
+  <li>Keep <a href="./build-cycle-time.html">build cycle time</a> short to allow roll-forward.</li>
+  <li>Implement feature flags for larger feature changes to allow the them to be deactivated without re-deploying.</li>
+  <li>Identify stability issues and prioritize them in the backlog.</li>
+</ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Requests can be tracked in spreadsheet or other locations and then added to
-the backlog just before development. This can be identified by decreased
-customer satisfaction.</li>
-  <li>Reduce feature refining rigour.</li>
+  <li>Updating support incidents to “closed” before service is restored.</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> is reduced as less time is spent refining and defining
-how to validate the feature.</li>
-  <li><a href="./productivity.html">Productivity</a> is reduced if tightly coupled components are
-shifted to another team or excessive communication is required for
-<a href="https://paypal.github.io/InnerSourceCommons/">InnerSourcing</a>.</li>
+  <li><a href="./quality.html">Quality</a> decreases as issues re-occur due to lack of root cause
+fixes.</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
 </ul>
 
 

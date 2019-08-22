@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>DevOps Dojo Consortium | MTTR</title>
+  <title>DevOps Dojo Consortium | Change Fail Rate</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1566475516300594014" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566475516300594014" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566475516300594014" />
-  <link rel="stylesheet" href="/assets/css/site.css?1566475516300594014" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1566510119023315383" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1566510119023315383" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1566510119023315383" />
+  <link rel="stylesheet" href="/assets/css/site.css?1566510119023315383" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1566475516300594014" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1566510119023315383" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1566475516300594014" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1566510119023315383" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -150,7 +150,7 @@
       
       
       <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" class="hidden">
+      <ul id="playbooks" >
       
         
         
@@ -167,10 +167,10 @@
         
         
         <li >
-          <a href="/docs/playbooks/lean/index.html">Lean</a></li>
+          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/metrics/mean-time-to-repair.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/change-fail-rate.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -202,63 +202,80 @@
     
   
     
-      <a href="/docs/metrics/"
+      <a href="/docs/playbooks/"
+        style="text-transform: capitalize"
+      >playbooks</a> > 
+    
+  
+    
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
       >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">MTTR</span>
+      <span style="font-weight: bold;">Change Fail Rate</span>
     
   </p>
 </div>
 
     <div style="float:right;font-size:.8em;">
   
+  <a
+    href="https://www.walmart.com">Alexis Dixon</a>
+  ,
+  <a
+    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
+  ,
+  <a
+    href="https://www.walmart.com">Nathan Nicholson</a>
+  ,
+  <a
+    href="https://www.walmart.com">Preston Gibbs</a>
+  
   
 </div><br>
 
-    <h1 id="mttr">MTTR</h1>
+    <h1 id="change-fail-rate">Change Fail Rate</h1>
 
-<p>Mean Time to Repair is the average time between when a service outage is
-detected and when it is resolved. Target average time is less than 60 minutes.</p>
+<p>The percentage of changes that result in negative customer impact, or rollback.</p>
 
-<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./deploy-frequency.html">release frequency</a>, and MTTR. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
+<p><code class="highlighter-rouge">changeFailRate = failedChangeCount / changeCount</code></p>
 
-<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a> and Release Frequency for <a href="./deploy-frequency.html">Deploy Frequency</a>.</p>
+<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./release-frequency.html">release frequency</a>, and <a href="./mean-time-to-repair.html">MTTR</a>. Change fail rate is not included, though it is highly correlated.”</p>
+
+<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Reduce system instability and service outage time.</p>
+<p>Reduce the percentage of failed changes to less than 15%.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Always make sure the pipeline is green and ready to deploy.</li>
-  <li>Keep <a href="./build-cycle-time.html">build cycle time</a> short to allow roll-forward.</li>
-  <li>Implement feature flags for risky changes to allow the changes to be deactivated without re-deploying.</li>
-  <li>Identify stability issues and prioritize them in the backlog.</li>
+  <li>Release more, smaller changes to make quality steps more effective and reduce the impact of failure.</li>
+  <li>Identify root cause for each failure and improve the automated quality checks.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Updating support incidents to “closed” before service is restored.</li>
+  <li>Deploy fixes without recording the defect.</li>
+  <li>Create defect review meetings and re-classify defects as feature requests.</li>
+  <li>Re-deploy the latest working version to increase deploy count.</li>
 </ul>
 
 <h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> decreases as issues re-occur due to lack of root cause
-fixes.</li>
+  <li><a href="./release-frequency.html">Release frequency</a> decreases as focus is placed on “zero defect” changes.</li>
 </ul>
 
 <h3 id="references">References</h3>
+
 <ul>
   <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
 </ul>
-
-<p><em><a href="../index.html">Back To Bifrost</a></em></p>
 
 
     <script>
