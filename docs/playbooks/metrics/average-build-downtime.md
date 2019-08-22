@@ -11,7 +11,7 @@ The average length of time between when a build breaks and when it is fixed.
 
 ### What is the intended behavior?
 
-Keep the pipelines always deployable by fixing broken builds as rapidly as possible. Proken builds are the highest priority since
+Keep the pipelines always deployable by fixing broken builds as rapidly as possible. Broken builds are the highest priority since
 they prevent production fixes from being deployed in a safe, standard way.
 
 ### How is it improved?
