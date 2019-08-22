@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Productivity
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
@@ -12,8 +13,7 @@ defects and story work.
 
 ### What is the intended behavior?
 
-Help teams find what level of throughput per week is consistently achievable and
-to find ways to increase this over time by improving their processes.
+Help teams find what level of throughput per week is consistently achievable and find ways to increase this over time by reducing waste, reducing toil, improving planning, and focusing on teamwork.
 
 ### How is it improved?
 
@@ -38,5 +38,3 @@ to find ways to increase this over time by improving their processes.
 ## References
 
 [Harvard Business Review: Six Myths of Product Development](https://hbr.org/2012/05/six-myths-of-product-development)
-
-

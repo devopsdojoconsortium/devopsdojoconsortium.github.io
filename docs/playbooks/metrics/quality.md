@@ -1,24 +1,22 @@
 ---
 layout: docs
 title: Quality
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
 # {{ page.title }}
 
-Quality is measured as the percentage of finished work that is marked as defect
-type for the reporting period.
+Quality is measured as the percentage of finished work that is reported as a defect by the end user.
 
 ### What is the intended behavior?
 
-Help teams continuously triage and complete defect backlog items at a consistent
-rate. Try and drive this percentage lower without deferring defects.
+Identify and rapidly resolve any gaps in the upstream quality steps starting at understanding and refining the product requirements.
 
 ### How is it improved?
 
 - Identify root cause.
-- Add tests to prevent root cause.
-- Review the team quality process and look for improvement items.
+- Add automated checks to the pipeline to prevent re-occurrence.
 
 ### How is it gamed?
 
@@ -29,5 +27,3 @@ rate. Try and drive this percentage lower without deferring defects.
 
 - [WIP](./work-in-progress.html) metric increases for defect types.
 - Feature delivery is impacted as defects are over prioritized.
-
-

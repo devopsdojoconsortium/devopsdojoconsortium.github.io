@@ -7,8 +7,8 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-The average frequency each developer on a team integrates tested, non-breaking code to trunk / master. Target is more than once per
-day per developer to reduce the size of change and speed value delivery.
+The average number of times each developer on a team
+integrates tested, non-breaking code to trunk / master. Healthy CI practice is at least once per day per developer.
 
 ### What is the intended behavior?
 
@@ -18,8 +18,8 @@ day per developer to reduce the size of change and speed value delivery.
 
 ### How is it improved?
 
-- Decompose code changes into smaller, non-breaking changes that are eventually feature complete.
-- Use [Behavior Driven Development](https://lizkeogh.com/category/bdd/) to aid functional breakdown.
+- Break down code changes into smaller units to incrementally deliver features.
+- Use [BDD](../lean/work-decomposition/behavior-driven-development.html) to aid functional breakdown.
 - Use TDD to design more modular code that can be integrated more frequently.
 - Make new code reachable only by the tests or flagged off for other
   environments with feature flags.

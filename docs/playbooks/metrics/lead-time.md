@@ -1,6 +1,7 @@
 ---
 layout: docs
-title: Total Lead Time
+title: Lead Time
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
@@ -18,8 +19,8 @@ or in conjunction with [productivity](./productivity.html) to help teams optimiz
 
 Relentlessly remove old items from the backlog.
 Improve team processes to reduce [Development Cycle Time](./development-cycle-time.html).
-Use InnerSourcing to offload work on to teams with capacity.
-Reallocate capability ownership to another team.
+Use Innersourcing to allow other teams to help when surges of work arrive.
+Re-assign, carefully, some components to another team to scale delivery.
 
 ### How is it gamed?
 
@@ -34,6 +35,7 @@ Reallocate capability ownership to another team.
   how to validate the feature.
 - [Productivity](./productivity.html) is reduced if tightly coupled components are
   shifted to another team or excessive communication is required for
-  [InnerSourcing](https://paypal.github.io/InnerSourceCommons/).
 
+### References
 
+- [InnerSourcing](https://paypal.github.io/InnerSourceCommons/).

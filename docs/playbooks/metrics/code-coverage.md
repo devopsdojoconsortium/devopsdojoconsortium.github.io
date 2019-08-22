@@ -1,12 +1,14 @@
 ---
 layout: docs
 title: Code Coverage
+authors: [adixon, bfinster, nnicholson, pgibbs]
 side-navigation: docs-navigation.html
 ---
 
 # {{ page.title }}
 
-Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%.
+Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%, but this is
+considered a situational reference and not a goal.
 
 ### What is the intended behavior?
 
@@ -57,5 +59,3 @@ it('Should add two whole numbers' () => {
 - [Development Cycle Time](./development-cycle-time.html) increases with additional development time dedicated to chasing the coverage metric.
 - [Quality](./quality.html) decreases as poor quality tests hide lack of real code
   coverage.
-
-
