@@ -3,11 +3,10 @@ layout: project
 title: About the DevOps Dojo Consortium
 ---
 
-We are collaboration a of enterprise Dojos all seeking to improve both the outcomes of their companies and the
+We are a collaboration of enterprise Dojos all seeking to improve both the outcomes of their companies and the
 quality of life of product teams.
 
-DevOps is often used to mean different things and many people new to DevOps instantly focus on what tools to buy. You cannot buy
-DevOps and tools represent a small portion of the solution. In our context, these are our guiding principles for "DevOps"
+DevOps is often used to mean different things and people new to DevOps often focus on tooling. You cannot buy DevOps and tools represent a small portion of the solution. In our context, this is guiding principle for "DevOps"
 
 <blockquote>
 DevOps should be defined by the outcomes. It is those sets of cultural norms and
