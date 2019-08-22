@@ -22,8 +22,8 @@ rapidly, reduce [MTTR](./mean-time-to-repair.html), and accelerate value deliver
 ### How is it improved?
 
 - Reduce [Development Cycle Time](./development-cycle-time.html).
-- Remove all handoffs to other teams.
-- Remove all manual or external approvals for change.
+- Remove handoffs to other teams.
+- Remove manual or external approvals for change.
 - Move hard dependencies to soft dependencies with feature flags and contract tests.
 
 ### How is it gamed?

@@ -33,3 +33,9 @@ integrates tested, non-breaking code to trunk / master. Healthy CI practice is a
 - [Quality](./quality.html) decreases when testing is skipped.
 - [Development Cycle Time](./development-cycle-time.html) increases due to additional
   review overhead.
+
+### Recommended Practices
+
+- [Trunk Based Development](https://trunkbaseddevelopment.com/)
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
+- [Feature Flagging](https://martinfowler.com/articles/feature-toggles.html)
