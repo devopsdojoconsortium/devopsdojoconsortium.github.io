@@ -11,7 +11,8 @@ The average length of time between when a build breaks and when it is fixed.
 
 ### What is the intended behavior?
 
-Decrease the average time to recover from a broken build.
+Keep the pipelines always deployable by fixing broken builds as rapidly as possible. Proken builds are the highest priority since
+they prevent production fixes from being deployed in a safe, standard way.
 
 ### How is it improved?
 
@@ -19,6 +20,7 @@ Decrease the average time to recover from a broken build.
 - Improve tests to locate problems more rapidly.
 - Decrease the size of the component to reduce complexity.
 - Add automated alerts for broken builds.
+- Ensure the proper team practice is in place to support each other in solving the problem as a team.
 
 ### How is it gamed?
 

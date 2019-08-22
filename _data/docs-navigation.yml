@@ -15,7 +15,7 @@ nav:
         context: /docs/playbooks/culture/index
       - page: Automation
         context: /docs/playbooks/automation/index
-      - page: Lean
+      - page: Lean Process
         context: /docs/playbooks/lean/index
       - page: Metrics
         context: /docs/playbooks/metrics/index

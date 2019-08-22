@@ -12,7 +12,7 @@ The time from code commit to production deploy. This is the minimum time changes
 ### What is the intended behavior?
 
 Reduce pipeline duration to improve [MTTR](./mean-time-to-repair.html) and to
-amplify feedback loops.
+amplify the quality signal by giving the team more rapid feedback to any issues.
 
 ### How is it improved?
 
