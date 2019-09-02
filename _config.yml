@@ -5,9 +5,9 @@
 # ----------------------------------------------------------------------------------------------------------------------
 
 id: dojoconsortium
-name: DevOps Dojo Consortium
-domain: devopsdojoconsortium.github.io
-url: https://devopsdojoconsortium.github.io/index.html
+name: Dojo Consortium
+domain: dojoconsortium.org
+url: http://dojoconsortium.org/index.html
 logo: /assets/img/logos/dojo-consortium-horiz.png
 description: "Open Sourcing Enterprise Transformation."
 source_url: https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/

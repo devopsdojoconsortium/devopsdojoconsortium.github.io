@@ -1,4 +1,4 @@
-# DevOps Dojo Commons
+# Dojo Consortium
 
 Contributions are welcome. Please follow the following guidelines:
 
