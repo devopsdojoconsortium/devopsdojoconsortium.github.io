@@ -1,6 +1,6 @@
 ---
 layout: project
-title: About the DevOps Dojo Consortium
+title: About the Dojo Consortium
 ---
 
 We are a collaboration of enterprise Dojos all seeking to improve both the outcomes of their companies and the

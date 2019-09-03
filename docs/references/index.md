@@ -227,8 +227,6 @@ Is your application ready for production?
 
 The role of the Product Owner is commonly misunderstood. Here's a [quick video](https://www.youtube.com/watch?v=502ILHjX9EE) that explains how it works.
 
-If you have questions about this information or or suggestions for improvement, please contact us at [#devops-dojo](https://walmart.slack.com/app_redirect?channel=devops-dojo).
-
 ### Source Management
 
 Proper source management is foundational. Everything related to value delivery must be source controlled, including documentation.
