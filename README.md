@@ -1,4 +1,4 @@
-# DevOps Dojo Consortium Website
+# Dojo Consortium Website
 
 This is the source code of the website for devopsdojocommons.org
 
