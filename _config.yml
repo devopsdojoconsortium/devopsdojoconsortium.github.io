@@ -1,9 +1,9 @@
+--- # ----------------------------------------------------------------------------------------------------------------------
+
 # ----------------------------------------------------------------------------------------------------------------------
 # Site customization
 # ----------------------------------------------------------------------------------------------------------------------
 # Any variable here is referenced in layouts/pages as {{site.XXX}} so something like {{site.googleId}}
-# ----------------------------------------------------------------------------------------------------------------------
-
 id: dojoconsortium
 name: Dojo Consortium
 domain: dojoconsortium.org
@@ -22,8 +22,8 @@ edit-on-github: true
 
 navigation:
   - title: OVERVIEW
-    url: /overview/index.html
-    context: /overview/
+    url: /index.html
+    context: / /
   - title: DOCS
     url: /docs/index.html
     context: /docs/
@@ -31,21 +31,15 @@ navigation:
     url: /blog.html
     context: /blog
 
-projects:
- - title: About the Consortium
-   url: /overview/index.html
-
 defaults:
-  -
-   scope:
-     type: pages
-   values:
-     permalink: /:path/:basename:output_ext
-  -
-   scope:
-     type: posts
-   values:
-     permalink: /blog/:year-:month-:day-:title.html
+  - scope:
+      type: pages
+    values:
+      permalink: /:path/:basename:output_ext
+  - scope:
+      type: posts
+    values:
+      permalink: /blog/:year-:month-:day-:title.html
 
 excerpt_separator: <!--more-->
 

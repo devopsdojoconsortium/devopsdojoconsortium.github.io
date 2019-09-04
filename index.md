@@ -1,10 +1,12 @@
 ---
-layout: project
+layout: default
 title: About the Dojo Consortium
 ---
 
-We are a collaboration of enterprise Dojos all seeking to improve both the outcomes of their companies and the
-quality of life of product teams.
+<img src="./assets/img/logos/dojo-consortium-logo.png" width="20%">
+
+We are a collaboration of representatives from enterprise Dojos who seek to improve both the outcomes of their companies and the
+quality of life of product teams using immersive learning techniques.
 
 DevOps is often used to mean different things and people new to DevOps often focus on tooling. You cannot buy DevOps and tools represent a small portion of the solution. In our context, this is guiding principle for "DevOps"
 
