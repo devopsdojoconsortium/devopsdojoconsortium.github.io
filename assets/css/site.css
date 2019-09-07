@@ -128,7 +128,7 @@
 /* ------------------------------ GLOBAL STYLES ------------------------------ */
 
 :root {
-  --yellow: #ffc220;
+  --dark-blue: #ffc220;
   --purple: #2f2951;
   --dark-blue: #0b4e90;
   --blue: #007dc6;
@@ -470,7 +470,7 @@ button.button-img {
 }
 
 .header .navbar-default .navbar-nav>li>a:hover {
-  color: var(--yellow);
+  color: var(--dark-blue);
 }
 
 @media only screen and (min-width : 320px) and (max-width : 768px) {
@@ -490,7 +490,7 @@ button.button-img {
 }
 
 .header .navbar-default .navbar-nav>.active>a {
-  background: var(--yellow);
+  background: var(--dark-blue);
   color: #ffffff;
   /*border: 0px solid #ffffff;
      border-radius: 5px !important;*/
@@ -499,15 +499,15 @@ button.button-img {
 .navbar-toggle,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background: var(--yellow);
+  background: var(--dark-blue);
 }
 
 .navbar-toggle:hover {
-  background: var(--yellow);
+  background: var(--dark-blue);
 }
 
 .navbar-default .navbar-toggle {
-  border-color: var(--yellow);
+  border-color: var(--dark-blue);
   margin-top: 30px;
 }
 
@@ -516,7 +516,7 @@ button.button-img {
 }
 
 .header .navbar .nav>li>a.search:hover {
-  color: var(--yellow);
+  color: var(--dark-blue);
 }
 
 .header .navbar-collapse {
@@ -536,7 +536,7 @@ ul.nav li {
 
 .header .navbar-default .navbar-nav>li>a:hover,
 .header .navbar-default .navbar-nav>.active>a {
-  background: var(--yellow);
+  background: var(--dark-blue);
   color: #ffffff;
 }
 
@@ -549,7 +549,7 @@ ul.nav li {
 .header .navbar-default .navbar-nav>.active>a,
 .header .navbar-default .navbar-nav>.active>a:hover,
 .header .navbar-default .navbar-nav>.active>a:focus {
-  background: var(--yellow);
+  background: var(--dark-blue);
 }
 
 .header .navbar-default .navbar-nav>.open>a:hover,
@@ -566,8 +566,8 @@ ul.nav li {
 .header .navbar-default .navbar-nav>li>a.search:hover,
 .header .navbar-default .navbar-nav>.active>a.search {
   background: #ffffff;
-  border: 1px solid var(--yellow);
-  color: var(--yellow);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
   cursor: pointer;
 }
 
@@ -587,7 +587,7 @@ ul.dropdown-menu li {
 
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-  background-color: var(--yellow);
+  background-color: var(--dark-blue);
   color: #ffffff;
 }
 
@@ -624,7 +624,7 @@ ul.top-nav li a {
 }
 
 .header .navbar-default .navbar-nav>.open>a {
-  background-color: var(--yellow);
+  background-color: var(--dark-blue);
   color: #ffffff;
 }
 
@@ -689,7 +689,7 @@ ul.top-nav li a {
 }
 
 .icon-search {
-  color: var(--yellow);
+  color: var(--dark-blue);
   margin-left: 5px;
 }
 
@@ -789,7 +789,7 @@ ul.pagination li {
 }
 
 ul.pagination li a:hover {
-  background: var(--yellow);
+  background: var(--dark-blue);
   color: #ffffff;
 }
 
@@ -826,8 +826,8 @@ ul.pagination li a:hover {
   color: var(--blue);
 }
 
-.yellow {
-  color: var(--yellow);
+.dark-blue {
+  color: var(--dark-blue);
 }
 
 .purple {
@@ -906,12 +906,12 @@ ul.pagination li a:hover {
   background-color: #b3b3b3 !important;
 }
 
-.yellow-bg {
-  background-color: var(--yellow) !important;
+.dark-blue-bg {
+  background-color: var(--dark-blue) !important;
   color: #ffffff;
 }
 
-.yellow-bg:hover {
+.dark-blue-bg:hover {
   background-color: #efac03 !important;
 }
 
@@ -969,17 +969,17 @@ ul.pagination li a:hover {
   background-color: #e95e05 !important;
 }
 
-.dojo-yellow {
+.dojo-dark-blue {
   color: #ffc220 !important;
 }
 
 
-.dojo-yellow-bg {
+.dojo-dark-blue-bg {
   background-color: #ffc220 !important;
   color: #ffffff;
 }
 
-.dojo-yellow-bg:hover {
+.dojo-dark-blue-bg:hover {
   background-color: #f8b502 !important;
 }
 
@@ -1076,16 +1076,16 @@ ul.pagination li a:hover {
   background-color: #999999 !important;
 }
 
-.custom-yellow {
+.custom-dark-blue {
   color: #fdb94c !important;
 }
 
-.custom-yellow-bg {
+.custom-dark-blue-bg {
   background-color: #fdb94c !important;
   color: #ffffff;
 }
 
-.custom-yellow-bg:hover {
+.custom-dark-blue-bg:hover {
   background-color: #ed9d29 !important;
 }
 
@@ -1105,8 +1105,8 @@ ul.pagination li a:hover {
 /* ------------------------------ BUTTONS ------------------------------ */
 
 .btn-u {
-  background: var(--yellow);
-  border: 0px solid var(--yellow);
+  background: var(--dark-blue);
+  border: 0px solid var(--dark-blue);
   border-radius: 25px !important;
   color: #ffffff !important;
   cursor: pointer;
@@ -1154,8 +1154,8 @@ ul.pagination li a:hover {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: var(--yellow);
-  border-color: var(--yellow);
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
 }
 
 .list-group-item.active .list-group-item-heading,
@@ -1194,7 +1194,7 @@ a.list-group-item-success .list-group-item-heading {
 a.list-group-item-success:hover,
 a.list-group-item-success:focus {
   color: #ffffff;
-  background-color: var(--yellow);
+  background-color: var(--dark-blue);
 }
 
 a.list-group-item-success.active,
@@ -1242,8 +1242,8 @@ a.list-group-item-success.active:focus {
 .btn-projects.active,
 .open>.dropdown-toggle.btn-projects {
   color: #ffffff;
-  background-color: var(--yellow);
-  border: 0px solid var(--yellow);
+  background-color: var(--dark-blue);
+  border: 0px solid var(--dark-blue);
 }
 
 .project-btn-container {
@@ -1314,11 +1314,11 @@ a.list-group-item-success.active:focus {
   margin: 0 0 -2px;
   padding-bottom: 5px;
   display: inline-block;
-  border-bottom: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--dark-blue);
 }
 
 .footer .btn-u {
-  background: var(--yellow);
+  background: var(--dark-blue);
 }
 
 .footer .btn-u:hover {
@@ -1347,7 +1347,7 @@ a.list-group-item-success.active:focus {
 }
 
 .copyright a:hover {
-  color: var(--yellow);
+  color: var(--dark-blue);
   text-decoration: underline;
 }
 
