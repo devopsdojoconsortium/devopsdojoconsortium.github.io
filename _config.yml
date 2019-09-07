@@ -9,7 +9,7 @@ name: Dojo Consortium
 domain: dojoconsortium.org
 url: http://dojoconsortium.org/index.html
 logo: /assets/img/logos/dojo-consortium-horiz.png
-description: "Open Sourcing Enterprise Transformation."
+description: "Open sourcing enterprise transformation."
 source_url: https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/
 license: "Licensed Creative Commons Attribution-ShareAlike 4.0 International"
 license_url: https://creativecommons.org/licenses/by-sa/4.0/

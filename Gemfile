@@ -4,7 +4,7 @@ ruby ">= 2.4.1"
 gem "jekyll", "~>3.8.3"
 gem "minima", "~> 2.0"
 gem "json"
-gem "html-proofer"
+gem "html-proofer" 
 gem "hash-joiner"
 gem "rake"
 
