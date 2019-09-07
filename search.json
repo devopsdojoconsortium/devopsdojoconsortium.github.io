@@ -13,7 +13,7 @@
  {
   "title": "Blog",
   "url": "/blog.html",
-  "content": "Latest Posts        Demo    Example blog post intro    "
+  "content": "Latest Member PostsThese are the opinions of individuals and do not represent the views of the Dojo Consortium or the members&#39;  employers.        5 Minute DevOps - GitFlow Best Practices    I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know, this is GitFlow:    "
  },
  {
   "title": "Build Cycle Time",
@@ -153,10 +153,10 @@
  },
 
 {
-  "title": "Demo",
-  "url": "/blog/2019-08-03-demo.html",
-  "date": "2019-08-03 00:00:00 +0000",
-  "content": "Example blog post introThe rest of the blog post after the first para"
+  "title": "5 Minute DevOps - GitFlow Best Practices",
+  "url": "/blog/2019-09-07-bfinster.html",
+  "date": "2019-09-07 00:00:00 +0000",
+  "content": "I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know, this is GitFlow:There is no CI good practice that includes GitFlow. For continuous integration to meet the definition, these are the good practices:  Developers must implement all tests before they commit code. This is a non-negotiable and I will not work with developers who refuse to test. Professionals deliver working, tested code. Script kiddies dont test.  Use CI automation to trigger builds for every pull request so that bad changes can be rejected before code review.  Ensure that all tests are executed and linting and static code analysis is done for every PR.  Implement CI practices:          All developers branch from the trunk, make changes, and submit PRs back to trunk.      The branches are removed in less than 24 hours.      Youre now doing Trunk Based Development. Welcome to your CI/CD journey!The complexity of the CI automation will depend on how poorly the application is architected and the size of the development team. Monoliths with poor sub-domain boundaries will require much more complicated test design and test execution will take much longer. Evolve The architecture into independent, loosely coupled sub-domains to improve delivery speed, reduce testing overhead, and improve stability, resilience, and scalability.GitFlow does not increase quality or value delivery. It delays quality signal feedback to the developers, incentivizes manual process, and is incredibly wasteful of time and resources. No modern development uses it.Some developers have a religion built around GitFlow because it reduces typing (reduced pain from not testing) and they dont track their levels of re-work, lost changes, or conflict resolution. In 2010, GitFlow felt good. We could keep Master clean. That was almost a decade ago. Testing was still mostly manual. We were still on Java 6. NodeJS was barely a thing. Time to modernize. We dont keep Master clean with process. We keep it clean with automation.Other examples:  The Amazing DevOps Transformation Of The HP LaserJet Firmware Team  What is Continuous Delivery?This post orginally appeared on Medium. You can see other posts in the 5 Minute DevOps series there"
  },
  {
   "title": "",

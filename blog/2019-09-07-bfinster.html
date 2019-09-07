@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Dojo Consortium | Demo</title>
+  <title>Dojo Consortium | 5 Minute DevOps - GitFlow Best Practices</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open Sourcing Enterprise Transformation." />
@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1567597464270345807" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1567597464270345807" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1567597464270345807" />
-  <link rel="stylesheet" href="/assets/css/site.css?1567597464270345807" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1567862398596592484" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1567862398596592484" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1567862398596592484" />
+  <link rel="stylesheet" href="/assets/css/site.css?1567862398596592484" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1567597464270345807" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1567862398596592484" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1567597464270345807" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1567862398596592484" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -130,7 +130,7 @@
 </div><!-- END header -->
   <div class="margin-bottom-20"></div>
   <div class="container">
-    <h1>Demo</h1>
+    <h1>5 Minute DevOps - GitFlow Best Practices</h1>
 <p>
   
 
@@ -140,15 +140,44 @@
   </span>
   
   <br>
-  03 Aug 2019
+  07 Sep 2019
 </p>
 
-<p>Example blog post intro</p>
+<p>I was asked recently about the best practice for using GitFlow with continuous integration. For those who do not know, this is GitFlow:</p>
 
 <!--more-->
 
-<p>The rest of the blog post after the first para</p>
+<p><img src="../assets/img/posts/giflow.png" width="35%" alt="Post from 2010: https://nvie.com/posts/a-successful-git-branching-model/" /></p>
 
+<p>There is no CI good practice that includes GitFlow. For continuous integration to meet the definition, these are the good practices:</p>
+
+<ul>
+  <li>Developers must implement <strong>all</strong> tests before they commit code. This is a non-negotiable and I will not work with developers who refuse to test. Professionals deliver working, tested code. Script kiddies don’t test.</li>
+  <li>Use CI automation to trigger builds for every pull request so that bad changes can be rejected before code review.</li>
+  <li>Ensure that all tests are executed and linting and static code analysis is done for every PR.</li>
+  <li>Implement CI practices:
+    <ul>
+      <li>All developers branch from the trunk, make changes, and submit PRs back to trunk.</li>
+      <li>The branches are removed in less than 24 hours.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>You’re now doing Trunk Based Development. Welcome to your CI/CD journey!</p>
+
+<p>The complexity of the CI automation will depend on how poorly the application is architected and the size of the development team. Monoliths with poor sub-domain boundaries will require much more complicated test design and test execution will take much longer. Evolve The architecture into independent, loosely coupled sub-domains to improve delivery speed, reduce testing overhead, and improve stability, resilience, and scalability.</p>
+
+<p>GitFlow does not increase quality or value delivery. It delays quality signal feedback to the developers, incentivizes manual process, and is incredibly wasteful of time and resources. No modern development uses it.</p>
+
+<p>Some developers have a religion built around GitFlow because it reduces typing (reduced pain from not testing) and they don’t track their levels of re-work, lost changes, or conflict resolution. In 2010, GitFlow felt good. We could keep Master “clean”. That was almost a decade ago. Testing was still mostly manual. We were still on Java 6. NodeJS was barely a thing. Time to modernize. We don’t keep Master clean with process. We keep it clean with automation.</p>
+
+<p>Other examples:</p>
+<ul>
+  <li><a href="https://itrevolution.com/the-amazing-devops-transformation-of-the-hp-laserjet-firmware-team-gary-gruver/">The Amazing DevOps Transformation Of The HP LaserJet Firmware Team</a></li>
+  <li><a href="https://continuousdelivery.com/">What is Continuous Delivery?</a></li>
+</ul>
+
+<p>This post orginally appeared on Medium. You can see other posts in the <code class="highlighter-rouge">5 Minute DevOps</code> series <a href="https://medium.com/@bdfinst">there</a></p>
 
 
   </div><!-- END container -->
