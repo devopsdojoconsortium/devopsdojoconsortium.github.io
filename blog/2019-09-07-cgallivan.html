@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Dojo Consortium | Build Cycle Time</title>
+  <title>Dojo Consortium | Great change happens through small steps. A lot of them.</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open sourcing enterprise transformation." />
@@ -79,10 +79,7 @@
           
           
           
-          <!--this will break if context isn't in the first part of the url-->
-          
-          
-          <li class="active">
+          <li class="">
             
             <a href="/docs/index.html">DOCS</a>
             
@@ -91,7 +88,10 @@
           
           
           
-          <li class="">
+          <!--this will break if context isn't in the first part of the url-->
+          
+          
+          <li class="active">
             
             <a href="/blog.html">BLOG</a>
             
@@ -130,152 +130,32 @@
 </div><!-- END header -->
   <div class="margin-bottom-20"></div>
   <div class="container">
-    <div class="row margin-bottom-50">
-
-    <!----- Docs Navigation ----->
-  <div class="col-md-2">
-
-    <div class="docs-navigation">
-      
-      
-      <h2><a onclick="toggleMenu(this, '#references');"><i class="fa fa-chevron-right pale-blue"></i> References</a></h2>
-      <ul id="references" class="hidden">
-      
-        
-        
-        <li >
-          <a href="/docs/references/index.html">Overview</a></li>
-        
-      </ul>
-      
-      
-      <h2><a onclick="toggleMenu(this, '#playbooks');"><i class="fa fa-chevron-right pale-blue"></i> Playbooks</a></h2>
-      <ul id="playbooks" >
-      
-        
-        
-        <li >
-          <a href="/docs/playbooks/index.html">Overview</a></li>
-        
-        
-        <li >
-          <a href="/docs/playbooks/culture/index.html">Culture</a></li>
-        
-        
-        <li >
-          <a href="/docs/playbooks/automation/index.html">Automation</a></li>
-        
-        
-        <li >
-          <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
-        
-        
-        <li class="active">
-          <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
-        
-        
-        <li >
-          <a href="/docs/playbooks/sharing/index.html">Sharing</a></li>
-        
-      </ul>
-      
-    </div>
-  </div><!-- END col-md-3 docs-navigation -->
-
-
-  <!----- Looper Docs Content ----->
-  <div class="col-md-10 docs-content">
-    
-    <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/build-cycle-time.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
-</div>
-
-    
-    
-<div style="font-size: 12px;">
-  <p><a href="/">Home</a> >
+    <h1>Great change happens through small steps. A lot of them.</h1>
+<p>
   
-    
-      <a href="/docs/"
-        style="text-transform: capitalize"
-      >docs</a> > 
-    
+
   
-    
-      <a href="/docs/playbooks/"
-        style="text-transform: capitalize"
-      >playbooks</a> > 
-    
+  <span>
+      Written by <a href="https://www.linkedin.com/in/christopher-gallivan-16a2b02/">Chris Gallivan</a>
+  </span>
   
-    
-      <a href="/docs/playbooks/metrics/"
-        style="text-transform: capitalize"
-      >metrics</a> > 
-    
-  
-    
-      <span style="font-weight: bold;">Build Cycle Time</span>
-    
-  </p>
-</div>
+  <br>
+  07 Sep 2019
+</p>
 
-    <div style="float:right;font-size:.8em;">
-  
-  <a
-    href="https://www.walmart.com">Alexis Dixon</a>
-  ,
-  <a
-    href="https://www.linkedin.com/in/bryan-finster/">Bryan Finster</a>
-  ,
-  <a
-    href="https://www.walmart.com">Nathan Nicholson</a>
-  ,
-  <a
-    href="https://www.walmart.com">Preston Gibbs</a>
-  
-  
-</div><br>
+<p>&lt;img src=”../assets/img/posts/steps.png”
+width=”90%”
+alt=”Post from Instagram: https://www.instagram.com/p/By0MZGPlsS1/?igshid=lhif13zps1la”&gt;
+The DevOps community provides sage advice to focus on outcomes. Outcomes in this context serve as the “North Star” to guide our improvement journey.</p>
 
-    <h1 id="build-cycle-time">Build Cycle Time</h1>
+<p>For some of us focusing on outcomes can be daunting, especially when that outcome is so far away. If we are not careful, we can get lost in the minutia; stuck in the starters block. 
+How do we get out of the starters block? I always tell my teams to make each day a little bit better than the day before. Make a small, simple improvement every day.</p>
 
-<p>The time from code commit to production deploy. This is the minimum time changes can be applied to production.</p>
+<p>Remember every successful journey starts with a single step…and ends with tired legs.</p>
 
-<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
-
-<p>Reduce pipeline duration to improve <a href="./mean-time-to-repair.html">MTTR</a> and to
-amplify the quality signal by giving the team more rapid feedback to any issues.</p>
-
-<h3 id="how-is-it-improved">How is it improved?</h3>
-
-<ul>
-  <li>Identify areas of the build that can run concurrently.</li>
-  <li>Replace integration tests in the pipeline with virtual services and move integration testing to an asynchronous process.</li>
-  <li>Remove unneeded code.</li>
-  <li>Break down large services into smaller domains.</li>
-</ul>
-
-<h3 id="how-is-it-gamed">How is it gamed?</h3>
-
-<ul>
-  <li>Reduce the number of tests running or test types executed.</li>
-</ul>
-
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
-
-<ul>
-  <li><a href="./quality.html">Quality</a> decreases if testing steps are skipped.</li>
-</ul>
+<p>This post originally appeared on Instagram. You can see other posts @the.devops.hive <a href="https://www.instagram.com/the.devops.hive/">there</a></p>
 
 
-    <script>
-var headings = document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]");
-for (var i = 0; i < headings.length; i++)
-{ headings[i].innerHTML = '<a href="#' + headings[i].id + '">' + headings[i].innerHTML + '</a>'; }
-</script>
-
-  </div><!-- END col-md-9 docs-content -->
-
-</div><!-- END row -->
 
   </div><!-- END container -->
 </div><!-- END wrap -->
