@@ -4,7 +4,7 @@ author: cgallivan
 title: Great change happens through small steps. A lot of them.
 ---
 
-<img src="../assets/img/posts/steps.png"
+<img src="../assets/img/posts/6D524680-10E0-4BB5-ACE5-558A6C96E06B.png"
 width="90%"
 alt="Post from Instagram: https://www.instagram.com/p/By0MZGPlsS1/?igshid=lhif13zps1la”>
 The DevOps community provides sage advice to focus on outcomes. Outcomes in this context serve as the "North Star" to guide our improvement journey. 
