@@ -2,12 +2,15 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
+<h2>Latest Member Posts</h2>
+
+<p>These are the opinions of individuals and do not represent the views of the Dojo Consortium or the members'
+  employers.</p>
 
 <ul>
   {% for post in site.posts %}
   <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p>{{ post.excerpt }}</p>
   </li>
   {% endfor %}
