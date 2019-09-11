@@ -5,9 +5,10 @@ Contributions are welcome. Please follow the following guidelines:
 ## Forking
 
 * Please fork the project using the fork button at the top of this page :point_up:
-* Make your proposed changes inside your fork.
+* Create a branch from the `release` branch of the fork
+* Make your proposed changes inside your branch.
 * Test your build locally (see below)
-* Commit to your fork.
+* Commit to your changes.
 * Follow the [GitHub Guidelines](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) on creating a pull request.
 * Please descriptive in your PR.
 
