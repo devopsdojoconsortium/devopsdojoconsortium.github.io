@@ -5,6 +5,7 @@ title: Living the Dream with Continuous Improvements
 ---
 
 We are creating an innovative environment and a strong corporate culture, and that is living the dream.
+
 <!--more-->
 
 <img src="https://technologyandoptimizingprocesses.files.wordpress.com/2019/08/morocco-20-copy-1.jpg"
@@ -21,9 +22,7 @@ Creating a continuous improvement culture starts with a mind shift change, so ev
 There are 3 high level components to a continuous improvement project: 
 
 -A goal 
-
 -A framework
-
 -Metrics that will help you measure your success
 
 First, the goal defines the dream. It answers the question of why we are doing the project. An expected outcome could be to reduce the time or cost of a process. Also, you may want to increase the quality or employee satisfaction that occurs while completing the process. A bonus would be to create value for all 4 areas. Also, a good practice is to define the goal in business terms, because it  helps everyone understand what we want to do. For example, I want to take “Process A” from 10 days to 5 days for an estimated 50% cost reduction.
