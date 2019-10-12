@@ -23,3 +23,11 @@ your outcomes are. So many things that we associate with DevOps, such as
 communication and culture, fit underneath this very broad umbrella of beliefs
 and practices.<br><br>-- Gene Kim, 2014
 </blockquote>
+
+For more on starting a Dojo and the difference between training and immersive learning, see [IT Revolution's](https://itrevolution.com/forum-papers/) **["Getting Started with
+Dojos"](https://itrevolution.com/book/getting-started-with-dojos/)** by:
+- **Ross Clanton**, Executive Director, Technology Modernization, Verizon
+- **Jaclyn Damiano**, Associate Director, Cloud Engineering & Enablement**, Verizon
+- **Carmen DeArdo**, Senior VSM Strategist, Tasktop
+- **John Esser**, CEO, Veracity Solutions
+- **Eric Passmore**, Partner, Commerce and Consumer Office Convergance, Mircosoft
