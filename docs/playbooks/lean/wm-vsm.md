@@ -77,7 +77,7 @@ The below sample is for a 3 day workshop that focuses more on the flow of work a
 #### Day 2
 - Refine Value Stream Map and add data points
 - Identify waste and oppotunities to improve the flow of work
-- Start future sate value stream map
+- Start future state value stream map
 
 #### Day 3
 - Complete future state value stream map
