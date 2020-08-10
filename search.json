@@ -83,7 +83,7 @@
  {
   "title": "Metrics Definitions",
   "url": "/docs/playbooks/metrics/index.html",
-  "content": "Metrics DefinitionsMetrics are key to organizational improvement. If we do not measure, then anyattempt at improvement is aimless. Metrics, like any tool, must be usedcorrectly to drive the improvement we need. The following are key deliverymetrics and how they can be used and mis-used.CI Execution  Commit Frequency  Build Cycle Time  Average Build DowntimeCD Execution  Throughput          Development Cycle Time      Deploy frequency        Stability          Change Failure Rate      Mean Time to Repair      Delivering Quality  Code Coverage  QualityWorkflow Management  Development Cycle Time  Productivity  Lead Time  Work In Process (WIP)waste  Code Inventory"
+  "content": "Metrics DefinitionsMetrics are key to organizational improvement. If we do not measure, then anyattempt at improvement is aimless. Metrics, like any tool, must be usedcorrectly to drive the improvement we need. The following are key deliverymetrics and how they can be used and mis-used.CI Execution  Commit Frequency  Build Cycle Time  Average Build DowntimeCD Execution  Throughput          Development Cycle Time      Deploy frequency        Stability          Change Failure Rate      Mean Time to Repair      Delivering Quality  Code Coverage  QualityWorkflow Management  Development Cycle Time  Productivity  Lead Time  Work In Process (WIP)Waste  Code Inventory"
  },
  {
   "title": "Automation",
