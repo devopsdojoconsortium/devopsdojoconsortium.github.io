@@ -2,7 +2,7 @@
 
 This is the source code of the website for devopsdojocommons.org
 
-<img src="https://travis-ci.org/devopsdojoconsortium/devopsdojoconsortium.github.io.svg?branch=release">
+<a href="https://travis-ci.org/github/devopsdojoconsortium/devopsdojoconsortium.github.io"><img src="https://travis-ci.org/devopsdojoconsortium/devopsdojoconsortium.github.io.svg?branch=release"></a>
 
 ---
 
@@ -26,7 +26,8 @@ In `/_data/authors.yml` add your information
 
 ## Adding blog posts
 
-In `/_posts/`, Add a new post with the filename matching `YYYY-MM-DD-post-title.md`
+In `/_posts/`, Add a new post with the filename matching
+`YYYY-MM-DD-post-title.md`
 
 The format should be
 
