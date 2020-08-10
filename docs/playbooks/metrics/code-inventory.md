@@ -36,5 +36,3 @@ The following metrics could degrade if not tracked with this metric
 
 - [Quality](./quality.html) can decrease as quality steps are skipped in the
   name of speed.
-
-{% include metrics-footer.html %}

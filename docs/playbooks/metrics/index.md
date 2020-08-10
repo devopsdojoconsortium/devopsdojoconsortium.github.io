@@ -38,3 +38,7 @@ metrics and how they can be used and mis-used.
 - [Productivity](./productivity.html)
 - [Lead Time](./lead-time.html)
 - [Work In Process (WIP)](./work-in-progress.html)
+
+### waste
+
+- [Code Inventory](./code-inventory.html)
