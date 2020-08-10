@@ -2,7 +2,7 @@
 
 This is the source code of the website for devopsdojocommons.org
 
-<a href="https://travis-ci.org/github/devopsdojoconsortium/devopsdojoconsortium.github.io"><img src="https://travis-ci.org/devopsdojoconsortium/devopsdojoconsortium.github.io.svg?branch=release"></a>
+<a href="https://travis-ci.org/github/devopsdojoconsortium/devopsdojoconsortium.github.io/builds"><img src="https://travis-ci.org/devopsdojoconsortium/devopsdojoconsortium.github.io.svg?branch=release"></a>
 
 ---
 
