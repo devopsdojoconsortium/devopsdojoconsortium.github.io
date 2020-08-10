@@ -7,6 +7,7 @@ gem "json"
 gem "html-proofer" 
 gem "hash-joiner"
 gem "kramdown-parser-gfm"
+gem "rake"
 
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
