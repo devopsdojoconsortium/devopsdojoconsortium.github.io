@@ -8,19 +8,21 @@ side-navigation: docs-navigation.html
 # {{ page.title }}
 
 This shows the average time it takes for a new request to be delivered. This is
-measured from the creation date to release date for each unit of work and includes [Development Cycle Time](./development-cycle-time.html).
+measured from the creation date to release date for each unit of work and
+includes [Development Cycle Time](./development-cycle-time.html).
 
 ### What is the intended behavior?
 
 Identify over utilized teams, backlogs that need more Product Owner attention,
-or in conjunction with [productivity](./productivity.html) to help teams optimize their processes.
+or in conjunction with [productivity](./productivity.html) to help teams
+optimize their processes.
 
 ### How is it improved?
 
-Relentlessly remove old items from the backlog.
-Improve team processes to reduce [Development Cycle Time](./development-cycle-time.html).
-Use Innersourcing to allow other teams to help when surges of work arrive.
-Re-assign, carefully, some components to another team to scale delivery.
+Relentlessly remove old items from the backlog. Improve team processes to reduce
+[Development Cycle Time](./development-cycle-time.html). Use Innersourcing to
+allow other teams to help when surges of work arrive. Re-assign, carefully, some
+components to another team to scale delivery.
 
 ### How is it gamed?
 
@@ -29,12 +31,14 @@ Re-assign, carefully, some components to another team to scale delivery.
   customer satisfaction.
 - Reduce feature refining rigour.
 
-### When over-driven, what metrics are impacted?
+### Guardrail Metrics
 
-- [Quality](./quality.html) is reduced as less time is spent refining and defining
-  how to validate the feature.
-- [Productivity](./productivity.html) is reduced if tightly coupled components are
-  shifted to another team or excessive communication is required for
+The following metrics could degrade if not tracked with this metric
+
+- [Quality](./quality.html) is reduced as less time is spent refining and
+  defining how to validate the feature.
+- [Productivity](./productivity.html) is reduced if tightly coupled components
+  are shifted to another team or excessive communication is required for
 
 ### References
 

@@ -9,8 +9,8 @@ side-navigation: docs-navigation.html
 
 Metrics are key to organizational improvement. If we do not measure, then any
 attempt at improvement is aimless. Metrics, like any tool, must be used
-correctly to drive the improvement we need. The following are key delivery metrics
-and how they can be used and mis-used.
+correctly to drive the improvement we need. The following are key delivery
+metrics and how they can be used and mis-used.
 
 ### CI Execution
 
@@ -22,7 +22,7 @@ and how they can be used and mis-used.
 
 - **Throughput**
   - [Development Cycle Time](./development-cycle-time.html)
-  - [Release Frequency](./release-frequency.html)
+  - [Deploy frequency](./deploy-frequency.html)
 - **Stability**
   - [Change Failure Rate](./change-fail-rate.html)
   - [Mean Time to Repair](./mean-time-to-repair.html)

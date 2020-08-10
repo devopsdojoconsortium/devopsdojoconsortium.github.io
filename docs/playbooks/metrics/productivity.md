@@ -7,13 +7,14 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-Throughput per week. This is measured by how many
-items were finished as a trend over time. This includes all items,
-defects and story work.
+Throughput per week. This is measured by how many items were finished as a trend
+over time. This includes all items, defects and story work.
 
 ### What is the intended behavior?
 
-Help teams find what level of throughput per week is consistently achievable and find ways to increase this over time by reducing waste, reducing toil, improving planning, and focusing on teamwork.
+Help teams find what level of throughput per week is consistently achievable and
+find ways to increase this over time by reducing waste, reducing toil, improving
+planning, and focusing on teamwork.
 
 ### How is it improved?
 
@@ -29,7 +30,9 @@ Help teams find what level of throughput per week is consistently achievable and
 - Skip quality steps.
 - Prematurely sign-off work only to have defects reported later.
 
-### When over-driven, what metrics are impacted?
+### Guardrail Metrics
+
+The following metrics could degrade if not tracked with this metric
 
 - [Quality](./quality.html) defect ratio goes up as more defects are reported.
 - [WIP](./work-in-progress.html) increases as teams start more work to look more

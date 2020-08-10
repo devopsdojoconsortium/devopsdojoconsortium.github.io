@@ -7,8 +7,9 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-The average number of times each developer on a team
-integrates tested, non-breaking code to trunk / master. Healthy CI practice is at least once per day per developer.
+The average number of times each developer on a team integrates tested,
+non-breaking code to trunk / master. Healthy CI practice is at least once per
+day per developer.
 
 ### What is the intended behavior?
 
@@ -19,7 +20,8 @@ integrates tested, non-breaking code to trunk / master. Healthy CI practice is a
 ### How is it improved?
 
 - Break down code changes into smaller units to incrementally deliver features.
-- Use [BDD](../lean/work-decomposition/behavior-driven-development.html) to aid functional breakdown.
+- Use [BDD](../lean/work-decomposition/behavior-driven-development.html) to aid
+  functional breakdown.
 - Use TDD to design more modular code that can be integrated more frequently.
 - Make new code reachable only by the tests or flagged off for other
   environments with feature flags.
@@ -28,11 +30,13 @@ integrates tested, non-breaking code to trunk / master. Healthy CI practice is a
 
 - Meaningless changes integrated to trunk.
 
-### When over-driven, what metrics are impacted?
+### Guardrail Metrics
+
+The following metrics could degrade if not tracked with this metric
 
 - [Quality](./quality.html) decreases when testing is skipped.
-- [Development Cycle Time](./development-cycle-time.html) increases due to additional
-  review overhead.
+- [Development Cycle Time](./development-cycle-time.html) increases due to
+  additional review overhead.
 
 ### Recommended Practices
 

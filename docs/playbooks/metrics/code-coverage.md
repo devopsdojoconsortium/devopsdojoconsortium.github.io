@@ -7,16 +7,17 @@ side-navigation: docs-navigation.html
 
 # {{ page.title }}
 
-Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%, but this is
-considered a situational reference and not a goal.
+Measure of how many lines, branches, and functions are executed when automated
+tests are run. Industry average is ~80%.
 
 ### What is the intended behavior?
 
-Provide the information needed to identify risky or complicated portions of the code that are not sufficiently covered by tests.
+Notify the team of risky or complicated portions of the code that are not
+sufficiently covered by tests.
 
 ### How is it improved?
 
-- Write tests for code that SHOULD be covered that isn't.
+- Write tests for code that SHOULD be covered but isn't.
 - Refactor the application to improve testability.
 
 ### How is it gamed?
@@ -25,7 +26,8 @@ Provide the information needed to identify risky or complicated portions of the 
 - Test code is written that does not check for failures.
 - Code is inappropriately excluded from test coverage reporting.
 
-Example: The following test will result in 100% function, branch, and line coverage with no behavior tested.
+Example: The following test will result in 100% function, branch, and line
+coverage with no behavior tested.
 
 ```javascript
 /* Returns the sum of two integers */
@@ -54,8 +56,11 @@ it('Should add two whole numbers' () => {
 })
 ```
 
-### When over-driven, what metrics are impacted?
+### Guardrail Metrics
 
-- [Development Cycle Time](./development-cycle-time.html) increases with additional development time dedicated to chasing the coverage metric.
-- [Quality](./quality.html) decreases as poor quality tests hide lack of real code
-  coverage.
+The following metrics could degrade if not tracked with this metric
+
+- [Development Cycle Time](./development-cycle-time.html) increases with
+  additional development time dedicated to chasing the coverage metric.
+- [Quality](./quality.html) decreases as poor quality tests hide lack of real
+  code coverage.
