@@ -39,6 +39,6 @@ metrics and how they can be used and mis-used.
 - [Lead Time](./lead-time.html)
 - [Work In Process (WIP)](./work-in-progress.html)
 
-### waste
+### Waste
 
 - [Code Inventory](./code-inventory.html)
