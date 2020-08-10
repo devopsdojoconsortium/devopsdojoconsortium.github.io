@@ -6,7 +6,6 @@ gem "minima", "~> 2.0"
 gem "json"
 gem "html-proofer" 
 gem "hash-joiner"
-gem "rake"
 gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
