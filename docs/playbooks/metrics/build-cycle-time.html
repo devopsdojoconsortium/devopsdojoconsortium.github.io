@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -238,20 +238,22 @@
 
     <h1 id="build-cycle-time">Build Cycle Time</h1>
 
-<p>The time from code commit to production deploy. This is the minimum time changes can be applied to production.</p>
+<p>The time from code commit to production deploy. This is the minimum time changes
+can be applied to production.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Reduce pipeline duration to improve <a href="./mean-time-to-repair.html">MTTR</a> and to
-amplify the quality signal by giving the team more rapid feedback to any issues.</p>
+<p>Reduce pipeline duration to improve <a href="./mean-time-to-repair.html">MTTR</a> and
+improve test efficiency to give the team more rapid feedback to any issues.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
   <li>Identify areas of the build that can run concurrently.</li>
-  <li>Replace integration tests in the pipeline with virtual services and move integration testing to an asynchronous process.</li>
-  <li>Remove unneeded code.</li>
-  <li>Break down large services into smaller domains.</li>
+  <li>Replace end to end tests in the pipeline with virtual services and move end to
+end testing to an asynchronous process.</li>
+  <li>Break down large services into smaller sub-domains that are easier and faster
+to test.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
@@ -260,7 +262,9 @@ amplify the quality signal by giving the team more rapid feedback to any issues.
   <li>Reduce the number of tests running or test types executed.</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
   <li><a href="./quality.html">Quality</a> decreases if testing steps are skipped.</li>

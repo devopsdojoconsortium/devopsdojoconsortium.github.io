@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -238,23 +238,21 @@
 
     <h1 id="mttr">MTTR</h1>
 
-<p>Mean Time to Repair is the average time between when a incidents is
-detected and when it is resolved.</p>
-
-<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./release-frequency.html">release frequency</a>, and MTTR. <a href="./change-fail-rate.html">Change fail rate</a> is not included, though it is highly correlated.”</p>
-
-<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
+<p>Mean Time to Repair is the average time between when a incidents is detected and
+when it is resolved.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Improve the ability to more rapidly resolve system instability and service outages.</p>
+<p>Improve the ability to more rapidly resolve system instability and service
+outages.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
   <li>Make sure the pipeline alway deployable.</li>
   <li>Keep <a href="./build-cycle-time.html">build cycle time</a> short to allow roll-forward.</li>
-  <li>Implement feature flags for larger feature changes to allow the them to be deactivated without re-deploying.</li>
+  <li>Implement feature flags for larger feature changes to allow the them to be
+deactivated without re-deploying.</li>
   <li>Identify stability issues and prioritize them in the backlog.</li>
 </ul>
 
@@ -264,17 +262,20 @@ detected and when it is resolved.</p>
   <li>Updating support incidents to “closed” before service is restored.</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
-  <li><a href="./quality.html">Quality</a> decreases as issues re-occur due to lack of root cause
-fixes.</li>
+  <li><a href="./quality.html">Quality</a> decreases as issues re-occur due to lack of root
+cause fixes.</li>
 </ul>
 
 <h3 id="references">References</h3>
 
 <ul>
-  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim.
+<a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
 </ul>
 
 

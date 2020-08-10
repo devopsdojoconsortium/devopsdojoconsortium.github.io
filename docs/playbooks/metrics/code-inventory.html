@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Dojo Consortium | Value Stream Mapping Workshop</title>
+  <title>Dojo Consortium | Code Inventory</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Open sourcing enterprise transformation." />
@@ -166,11 +166,11 @@
           <a href="/docs/playbooks/automation/index.html">Automation</a></li>
         
         
-        <li class="active">
+        <li >
           <a href="/docs/playbooks/lean/index.html">Lean Process</a></li>
         
         
-        <li >
+        <li class="active">
           <a href="/docs/playbooks/metrics/index.html">Metrics</a></li>
         
         
@@ -187,7 +187,7 @@
   <div class="col-md-10 docs-content">
     
     <div style="float:right;font-size:.7em;">
-  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/lean/wm-vsm.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
+  <a href="https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/tree/release/docs/playbooks/metrics/code-inventory.md" align="right">Edit this page on GitHub <i class="fa fa-github"></i></a>
 </div>
 
     
@@ -208,13 +208,13 @@
     
   
     
-      <a href="/docs/playbooks/lean/"
+      <a href="/docs/playbooks/metrics/"
         style="text-transform: capitalize"
-      >lean</a> > 
+      >metrics</a> > 
     
   
     
-      <span style="font-weight: bold;">Value Stream Mapping Workshop</span>
+      <span style="font-weight: bold;">Code Inventory</span>
     
   </p>
 </div>
@@ -232,133 +232,46 @@
   ,
   <a
     href="https://www.walmart.com">Preston Gibbs</a>
-  ,
-  <a
-    href="https://www.linkedin.com/in/benburbank/">Ben Burbank</a>
   
   
 </div><br>
 
-    <h1 id="value-stream-mapping-workshop">Value Stream Mapping Workshop</h1>
+    <p><img src="/assets/img/devops-dojo-motto.png" class="img-responsive" width="300px" /></p>
 
-<p>The purpose of Value Stream Mapping Workshop is to understand all of the steps needed to
-deliver value from conception to production. We can then use it as a tool to
-identify constraints and propose improvements to the value stream.</p>
+<h1 id="code-inventory">Code Inventory</h1>
 
-<h2 id="recommended-practices">Recommended Practices</h2>
+<p>The lines of code that have been changed but have not been delivered. This can
+be measured at several points in the delivery flow, starting with code not
+merged to trunk.</p>
 
-<ol>
-  <li>Everyone who has a touch point in the value stream should be present for the
-exercise. This includes, but is not limited to, the developers, the
-engineering manager, the product owner, and representatives from any external
-teams that have required steps between idea and production.</li>
-  <li>Start with an introduction to what value stream mapping is, and why it is important.</li>
-</ol>
+<h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p><a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%" /></a></p>
+<p>Reduce the batch size of individual changes and reduce the duration of branches.
+Small batches are needed for effective quality feedback. Stale branches
+represent risk of lost change or merge conflicts that result in additional
+manual steps that add risk of defect creation.</p>
 
-<h3 id="explain-the-terms-associated-with-value-stream-mapping">Explain the terms associated with value stream mapping</h3>
+<h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Build Cycle Time: Total duration of the build, from commit to deploy.</li>
-  <li>Development Cycle Time: The time from when work begins until it is deployed to production. Done.</li>
-  <li>Lead Time: The time taken from start to end of the value stream.</li>
-  <li>Process Time / Value Add Time: The time spent executing a particular process.</li>
-  <li>Wait Time / Non-value Time: The time between processes where no activity is occurring.</li>
-  <li>Percent Complete and Accurate: The percentage of work from a process that is
- rejected by the next process. If coding fails code review 20% of the time,
- it’s %C/A is 80%.</li>
+  <li>Focus on continuous integration behavior where changes are integrated to the
+trunk and verified multiple times per day.</li>
 </ul>
 
-<p><img src="../images/VSM-Card-Example.png" width="50%" /></p>
-
-<h3 id="identify-source-of-request">Identify source of request</h3>
-
-<p><img src="../images/request-example.png" width="30%" /></p>
-
-<p><em>Example:</em> Refine Epic</p>
-
-<p>For each source of <em>Requests</em></p>
-
-<ol>
-  <li>What is the outcome of that step, or next step?</li>
-  <li>Who is involved in that step?</li>
-  <li>How long does this step take?</li>
-  <li>How long between the previous and current steps?</li>
-</ol>
-
-<h3 id="identify-rework-loops-for-each-step">Identify Rework Loops for each step</h3>
-
-<p><img src="../images/rework-example.png" width="30%" /></p>
-
-<ol>
-  <li>To which steps do we return to from this one for corrections?</li>
-  <li>How often is work rejected from this step (percentage complete and accurate)?</li>
-</ol>
-
-<h3 id="identify-value-added-time-cycle-time-and-lead-time">Identify value added time, cycle time, and lead time</h3>
-
-<p><a href="../images/vsm-example.png"><img src="../images/vsm-example.png" width="50%" /></a></p>
-
-<ol>
-  <li>What is the total value time (time spent doing work) from conception to production?</li>
-  <li>What is the total non-value time (time waiting) from conception to production?</li>
-</ol>
-
-<h2 id="outcomes">Outcomes</h2>
+<h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Visual representation of the value stream(s) of the team.</li>
-  <li>Identify possible constraints to flow based on value added time, cycle time, and lead time.</li>
+  <li>Code on forks is not visible to be measured. However, forking should not be
+used for team development. Branching is more appropriate.</li>
 </ul>
 
-<h2 id="sample-workshop-agenda">Sample Workshop Agenda</h2>
-<p>The below sample is for a 3 day workshop that focuses more on the flow of work and less on the numbers.  If you would like to go into more of the metrics extending the workshop to 5 days would allow for that.</p>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
 
-<h4 id="day-1">Day 1</h4>
-<ul>
-  <li>Workshop working agreements</li>
-  <li>Review of workshop charter</li>
-  <li>Create/interate through current state value stream map</li>
-</ul>
-
-<h4 id="day-2">Day 2</h4>
-<ul>
-  <li>Refine Value Stream Map and add data points</li>
-  <li>Identify waste and oppotunities to improve the flow of work</li>
-  <li>Start future sate value stream map</li>
-</ul>
-
-<h4 id="day-3">Day 3</h4>
-<ul>
-  <li>Complete future state value stream map</li>
-  <li>Document/prioritize Kiazen improvement opportunities</li>
-</ul>
-
-<h2 id="tips">Tips</h2>
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
-  <li>Involve all team members associated to any part of the process of getting value from conception to production.</li>
-  <li>Review and maintain value stream map to show wins associated to implementing improvement.</li>
-  <li>Take into account all potential flows for team processes, and value stream those as well.</li>
-</ul>
-
-<h2 id="value">Value</h2>
-
-<p>As a team, we want to understand how to value stream map our team processes, so that we may understand bottlenecks associated to delivering value, and identify areas of improvement.</p>
-
-<h2 id="acceptance-criteria">Acceptance Criteria</h2>
-
-<ul>
-  <li>Value stream all things associated to delivering value.</li>
-  <li>Create action items of improvement from exercise.</li>
-</ul>
-
-<h2 id="references">References</h2>
-
-<ul>
-  <li><a href="https://creately.com/blog/diagrams/value-stream-mapping-guide/">Value Stream Mapping Guide</a></li>
-  <li><a href="https://books.google.com/books/about/Value_Stream_Mapping_How_to_Visualize_Wo.html?id=MeFrAAAAQBAJ">Value Stream Mapping: How to Visualize Work and Align Leadership for Organizational Transformation</a></li>
+  <li><a href="./quality.html">Quality</a> can decrease as quality steps are skipped in the
+name of speed.</li>
 </ul>
 
 

@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -238,17 +238,18 @@
 
     <h1 id="code-coverage">Code Coverage</h1>
 
-<p>Measure of how many lines, branches, and functions are executed when automated tests are run. Industry average is ~80%, but this is
-considered a situational reference and not a goal.</p>
+<p>Measure of how many lines, branches, and functions are executed when automated
+tests are run. Industry average is ~80%.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Provide the information needed to identify risky or complicated portions of the code that are not sufficiently covered by tests.</p>
+<p>Notify the team of risky or complicated portions of the code that are not
+sufficiently covered by tests.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Write tests for code that SHOULD be covered that isn’t.</li>
+  <li>Write tests for code that SHOULD be covered but isn’t.</li>
   <li>Refactor the application to improve testability.</li>
 </ul>
 
@@ -260,7 +261,8 @@ considered a situational reference and not a goal.</p>
   <li>Code is inappropriately excluded from test coverage reporting.</li>
 </ul>
 
-<p>Example: The following test will result in 100% function, branch, and line coverage with no behavior tested.</p>
+<p>Example: The following test will result in 100% function, branch, and line
+coverage with no behavior tested.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Returns the sum of two integers */</span>
 <span class="cm">/* Returns NaN for non-integers */</span>
@@ -287,12 +289,15 @@ considered a situational reference and not a goal.</p>
 <span class="p">})</span>
 </code></pre></div></div>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
-  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases with additional development time dedicated to chasing the coverage metric.</li>
-  <li><a href="./quality.html">Quality</a> decreases as poor quality tests hide lack of real code
-coverage.</li>
+  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases with
+additional development time dedicated to chasing the coverage metric.</li>
+  <li><a href="./quality.html">Quality</a> decreases as poor quality tests hide lack of real
+code coverage.</li>
 </ul>
 
 

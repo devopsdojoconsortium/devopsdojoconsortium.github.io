@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -242,8 +242,9 @@
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Keep the pipelines always deployable by fixing broken builds as rapidly as possible. Broken builds are the highest priority since
-they prevent production fixes from being deployed in a safe, standard way.</p>
+<p>Keep the pipelines always deployable by fixing broken builds as rapidly as
+possible. Broken builds are the highest priority since they prevent production
+fixes from being deployed in a safe, standard way.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
@@ -252,7 +253,8 @@ they prevent production fixes from being deployed in a safe, standard way.</p>
   <li>Improve tests to locate problems more rapidly.</li>
   <li>Decrease the size of the component to reduce complexity.</li>
   <li>Add automated alerts for broken builds.</li>
-  <li>Ensure the proper team practice is in place to support each other in solving the problem as a team.</li>
+  <li>Ensure the proper team practice is in place to support each other in solving
+the problem as a team.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
@@ -262,11 +264,15 @@ they prevent production fixes from being deployed in a safe, standard way.</p>
   <li>Remove tests that are failing.</li>
 </ul>
 
-<h3 id="when-over-emphasized-what-metrics-are-impacted">When over-emphasized, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
-  <li><a href="./commit-frequency.html">Commit frequency</a> decreases as additional manual or automated process overhead is added before integration to master.</li>
-  <li><a href="./productivity.html">Productivity</a> decreases as manual verification steps are added to ensure each pull request does not break the build.</li>
+  <li><a href="./integration-frequency.html">Integration Frequency</a> decreases as additional
+manual or automated process overhead is added before integration to trunk.</li>
+  <li><a href="./velocity.html">Throughput</a> decreases as manual verification steps are added
+to ensure each pull request does not break the build.</li>
 </ul>
 
 

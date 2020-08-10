@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -242,10 +242,6 @@
 
 <p><code class="language-plaintext highlighter-rouge">changeFailRate = failedChangeCount / changeCount</code></p>
 
-<p>“Software delivery performance is a combination of three metrics: <a href="./development-cycle-time.html">lead time</a>, <a href="./release-frequency.html">release frequency</a>, and <a href="./mean-time-to-repair.html">MTTR</a>. Change fail rate is not included, though it is highly correlated.”</p>
-
-<p><a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a> uses Lead Time for <a href="./development-cycle-time.html">Development Cycle Time</a>.</p>
-
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
 <p>Reduce the percentage of failed changes to less than 15%.</p>
@@ -253,7 +249,8 @@
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Release more, smaller changes to make quality steps more effective and reduce the impact of failure.</li>
+  <li>Release more, smaller changes to make quality steps more effective and reduce
+the impact of failure.</li>
   <li>Identify root cause for each failure and improve the automated quality checks.</li>
 </ul>
 
@@ -265,16 +262,20 @@
   <li>Re-deploy the latest working version to increase deploy count.</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
-  <li><a href="./release-frequency.html">Release frequency</a> decreases as focus is placed on “zero defect” changes.</li>
+  <li><a href="./deploy-frequency.html">Deploy frequency</a> decreases as focus is placed on
+“zero defect” changes.</li>
 </ul>
 
 <h3 id="references">References</h3>
 
 <ul>
-  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim. <a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
+  <li>Nicole Forsgren PhD, Jez Humble &amp; Gene Kim.
+<a href="https://itrevolution.com/book/accelerate/">“Accelerate”</a></li>
 </ul>
 
 

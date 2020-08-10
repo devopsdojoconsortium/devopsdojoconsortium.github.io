@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -238,27 +238,36 @@
 
     <h1 id="quality">Quality</h1>
 
-<p>Quality is measured as the percentage of finished work that is reported as a defect by the end user.</p>
+<p>Quality is measured as the percentage of finished work that is reported as
+defective or valueless by the end user and by stability and availability
+metrics.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
-<p>Identify and rapidly resolve any gaps in the upstream quality steps starting at understanding and refining the product requirements.</p>
+<p>Identify and rapidly resolve any gaps in the process of identifying the value to
+be delivered and the quality steps in the construction process.</p>
 
 <h3 id="how-is-it-improved">How is it improved?</h3>
 
 <ul>
-  <li>Identify root cause.</li>
+  <li>Identify root causes.</li>
   <li>Add automated checks to the pipeline to prevent re-occurrence.</li>
+  <li>Only begin new work with testable acceptance criteria.</li>
+  <li>Design feedback loops in every stage to rapid;y alert to quality, performance,
+or availability issues.</li>
 </ul>
 
 <h3 id="how-is-it-gamed">How is it gamed?</h3>
 
 <ul>
-  <li>Defects are entered as additional stories (seen by growing throughput, but
-lowering customer satisfaction and complaints)</li>
+  <li>Defects are logged as new features (seen by growing throughput, but lowering
+customer satisfaction and increasing complaints)</li>
+  <li>Using test coverage to proxy quality</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
   <li><a href="./work-in-progress.html">WIP</a> metric increases for defect types.</li>

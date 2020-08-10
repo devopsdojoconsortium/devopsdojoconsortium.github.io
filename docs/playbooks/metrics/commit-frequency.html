@@ -14,15 +14,15 @@
   <meta property="twitter:account_id" content="" />
   <!--  WMT resources -->
   <link rel="stylesheet"
-    href="/assets/plugins/bootstrap/css/bootstrap.css?1597095301605260169" />
-  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597095301605260169" />-->
-  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597095301605260169" />
-  <link rel="stylesheet" href="/assets/css/site.css?1597095301605260169" />
+    href="/assets/plugins/bootstrap/css/bootstrap.css?1597098703068813825" />
+  <!--<link rel="stylesheet" href="/assets/css/syntax.css?1597098703068813825" />-->
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css?1597098703068813825" />
+  <link rel="stylesheet" href="/assets/css/site.css?1597098703068813825" />
   <link rel="stylesheet"
-    href="/assets/plugins/font-awesome/css/font-awesome.css?1597095301605260169" />
+    href="/assets/plugins/font-awesome/css/font-awesome.css?1597098703068813825" />
 
   <!--  site specific resources -->
-  <link rel="stylesheet" href="/assets/css/custom.css?1597095301605260169" />
+  <link rel="stylesheet" href="/assets/css/custom.css?1597098703068813825" />
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
 
   <!-- scripts -->
@@ -238,8 +238,9 @@
 
     <h1 id="commit-frequency">Commit Frequency</h1>
 
-<p>The average number of times each developer on a team
-integrates tested, non-breaking code to trunk / master. Healthy CI practice is at least once per day per developer.</p>
+<p>The average number of times each developer on a team integrates tested,
+non-breaking code to trunk / master. Healthy CI practice is at least once per
+day per developer.</p>
 
 <h3 id="what-is-the-intended-behavior">What is the intended behavior?</h3>
 
@@ -253,7 +254,8 @@ integrates tested, non-breaking code to trunk / master. Healthy CI practice is a
 
 <ul>
   <li>Break down code changes into smaller units to incrementally deliver features.</li>
-  <li>Use <a href="../lean/work-decomposition/behavior-driven-development.html">BDD</a> to aid functional breakdown.</li>
+  <li>Use <a href="../lean/work-decomposition/behavior-driven-development.html">BDD</a> to aid
+functional breakdown.</li>
   <li>Use TDD to design more modular code that can be integrated more frequently.</li>
   <li>Make new code reachable only by the tests or flagged off for other
 environments with feature flags.</li>
@@ -265,12 +267,14 @@ environments with feature flags.</li>
   <li>Meaningless changes integrated to trunk.</li>
 </ul>
 
-<h3 id="when-over-driven-what-metrics-are-impacted">When over-driven, what metrics are impacted?</h3>
+<h3 id="guardrail-metrics">Guardrail Metrics</h3>
+
+<p>The following metrics could degrade if not tracked with this metric</p>
 
 <ul>
   <li><a href="./quality.html">Quality</a> decreases when testing is skipped.</li>
-  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases due to additional
-review overhead.</li>
+  <li><a href="./development-cycle-time.html">Development Cycle Time</a> increases due to
+additional review overhead.</li>
 </ul>
 
 <h3 id="recommended-practices">Recommended Practices</h3>
