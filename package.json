@@ -1,0 +1,24 @@
+{
+  "name": "devopsdojoconsortium.github.io",
+  "version": "1.0.0",
+  "description": "This is the source code of the website for devopsdojocommons.org",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "bundle config set path 'vendor/bundle' && bundle install",
+    "start": "bundle exec jekyll clean && bundle exec jekyll serve --incremental --future"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io/issues"
+  },
+  "homepage": "https://github.com/devopsdojoconsortium/devopsdojoconsortium.github.io#readme"
+}
